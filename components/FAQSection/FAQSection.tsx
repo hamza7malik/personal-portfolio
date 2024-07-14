@@ -96,8 +96,8 @@ const FAQSection = () => {
           <div className="section-right hidden lg:block">
             <img
               className="ml-auto"
-              src="images/faq-section/1.jpg"
-              alt="Tranquil-Faq Section"
+              src="images/character/2_4.png"
+              alt="funkaar-Faq Section"
               data-aos="fade-left"
             />
           </div>

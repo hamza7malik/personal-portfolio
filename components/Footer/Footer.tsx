@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import "./Footer.css";
-import CTAPrimary from "../CTAPrimary/CTAPrimary";
-import Link from "next/link";
+import './Footer.css';
+import CTAPrimary from '../CTAPrimary/CTAPrimary';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-12">
           <div className="md:col-span-4">
             <div className="footer-left py-20">
-              <img src="images/logos/logo-footer.png" alt="Tranquil Logo" />
+              <div className="c-logo-wrapper">funkaar</div>
               <h2 className="pt-6 pb-3 pr-10 sm:pr-0">
                 Subscribe to our newsletter
               </h2>
@@ -62,43 +62,43 @@ const Footer = () => {
                   </Link>
                   <br />
                   <Link href="#">
-                    <p>enquiry@tranquilinfra.com</p>
+                    <p>enquiry@funkaarinfra.com</p>
                   </Link>
                   <div className="socials-footer flex gap-5 pt-7 items-center">
                     <Link href="#">
                       <img
                         src="images/footer/facebook.png"
-                        alt="tranquil-facebook"
+                        alt="funkaar-facebook"
                       />
                     </Link>
                     <Link href="#">
                       <img
                         src="images/footer/twitter.png"
-                        alt="tranquil-twitter"
+                        alt="funkaar-twitter"
                       />
                     </Link>
                     <Link href="#">
                       <img
                         src="images/footer/instagram.png"
-                        alt="tranquil-instagram"
+                        alt="funkaar-instagram"
                       />
                     </Link>
                     <Link href="#">
                       <img
                         src="images/footer/linkedin.png"
-                        alt="tranquil-linkedin"
+                        alt="funkaar-linkedin"
                       />
                     </Link>
                     <Link href="#">
                       <img
                         src="images/footer/youtube.png"
-                        alt="tranquil-youtube"
+                        alt="funkaar-youtube"
                       />
                     </Link>
                     <Link href="#">
                       <img
                         src="images/footer/tiktok.png"
-                        alt="tranquil-tiktok"
+                        alt="funkaar-tiktok"
                       />
                     </Link>
                   </div>
