@@ -1,0 +1,32 @@
+.primary-cta {
+  background: linear-gradient(
+    to right,
+    var(--accent-color) 0%,
+    var(--accent-dark) 100%
+  );
+  transition: all 0.4s ease;
+  border-radius: var(--border-radius);
+  padding: 12px 48px;
+  margin-top: 40px;
+  color: #fff;
+}
+
+.primary-cta-outlined {
+  border: var(--accent-dark) 1px solid;
+  transition: all 0.4s ease;
+  border-radius: var(--border-radius);
+  padding: 12px 48px;
+  margin-top: 40px;
+  color: var(--accent-dark);
+}
+.primary-cta-outlined:hover {
+  background: linear-gradient(
+    to right,
+    var(--accent-color) 0%,
+    var(--accent-dark) 100%
+  );
+  border: none;
+  padding: 12px 48px;
+  margin-top: 40px;
+  color: #fff;
+}

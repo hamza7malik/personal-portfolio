@@ -1,0 +1,100 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #181818;
+  --primary-light: #181818;
+  --accent-color: #7f36db;
+  --accent-darker: #281f32;
+  --accent-dark: #281f32;
+  --secondary-color: #ffffff;
+  --section-light: #fbf7ed;
+  --border-radius: 4px;
+}
+body {
+  background-color: var(--section-light);
+  line-height: normal;
+}
+/* --------fonts-------- */
+body,
+p {
+  font-family: 'Genos', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--primary-light);
+}
+
+ul li a {
+  font-family: 'Genos', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  /* color: var(--primary-light); */
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Genos', sans-serif;
+  color: var(--primary-color);
+}
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'Genos', sans-serif;
+  color: var(--accent-dark);
+}
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Genos', sans-serif;
+  color: var(--accent-dark);
+}
+/* --------fonts-------- */
+section {
+  padding: 86.5px 0;
+  background-color: var(--section-light);
+  color: var(--primary-color);
+}
+
+/* ----------responsiveness---------- */
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+  /* ------------fonts----------- */
+  body,
+  p,
+  a {
+    font-size: 13px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+
+  /* ------------fonts----------- */
+  section {
+    padding: 26.5px 0;
+  }
+}
+@media (max-width: 576px) {
+}

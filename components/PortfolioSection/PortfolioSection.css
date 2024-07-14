@@ -1,0 +1,30 @@
+.portfolio-card {
+  /* height: 100%; */
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  border-color: #5b5b5b;
+  border-width: 1px;
+  border-style: solid;
+  padding: 20px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light greyish drop shadow */
+}
+.portfolio-card .head {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+.portfolio-card .tech {
+  color: var(--accent-color);
+  margin: 0;
+  font-size: 1rem;
+}
+.portfolio-card .tech-list {
+  font-size: 1rem;
+  margin: 0;
+}
+.portfolio-card img {
+  width: 100%;
+  height: auto;
+  margin: auto 0;
+}

@@ -1,0 +1,48 @@
+.blog-card h3 {
+  font-size: 32px;
+  font-weight: 100;
+  font-family: "Genos", sans-serif;
+  transition: color 0.4s ease, transform 0.4s ease;
+}
+.blog-card-content-wrap .blog-card-title {
+  transform: translateY(60px); /* Start with some offset */
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.blog-card-content-wrap .know-more-btn {
+  color: var(--primary-color);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px); /* Start with some offset */
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
+}
+
+/* ---hovers------ */
+
+.blog-card:hover .know-more-btn {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); /* Move it to its final position */
+}
+
+.blog-card:hover .blog-card-content-wrap .blog-card-title {
+  transform: translateY(0);
+}
+
+/* ----------responsiveness---------- */
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+  .blog-card h3 {
+    font-size: 19px;
+    font-weight: 100;
+    font-family: "Genos", sans-serif;
+    transition: color 0.4s ease, transform 0.4s ease;
+  }
+}
+@media (max-width: 576px) {
+}
