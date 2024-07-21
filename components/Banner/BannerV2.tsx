@@ -3,8 +3,6 @@ import './BannerV2.css';
 import CTAPrimary from '../CTAPrimary/CTAPrimary';
 import Link from 'next/link';
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import {duration} from '@mui/material';
 
 import gsap from 'gsap';
@@ -12,11 +10,6 @@ import {useGSAP} from '@gsap/react';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 
 const BannerV2 = () => {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
-
   const skills = [
     'React.js',
     'React Native',
@@ -73,7 +66,10 @@ const BannerV2 = () => {
 
     return () => {
       tl.kill();
-      ScrollTrigger.getById('hero-trigger').kill();
+      const trigger = ScrollTrigger.getById('hero-trigger');
+      if (trigger) {
+        trigger.kill();
+      }
     };
   }, []);
 
@@ -91,7 +87,7 @@ const BannerV2 = () => {
       <div className="c-banner-content text-white container" data-aos="fade-up">
         <div className="grid grid-cols-1 justify-center items-center">
           <div className="banner-right text-white col-span-2 text-center my-auto mt-40">
-            <span className="greeting-tag">HI! I'M,</span> <br />
+            <span className="greeting-tag">HI! I&apos;M,</span> <br />
             <h1 className="mx-auto mt-10">
               HAMZA MAIK, <br />{' '}
               <span className="px-3 bg-[var(--accent-color)] text-white">
@@ -100,7 +96,8 @@ const BannerV2 = () => {
               DEVELOPER
             </h1>
             <p className="text-white my-8">
-              Passionate MERN Stack Developer | UAE 🇦🇪 | Let's Build Together!
+              Passionate MERN Stack Developer | UAE 🇦🇪 | Let&apos;s Build
+              Together!
             </p>
             {/* <CTAPrimary text={'Get Started'} link={'#'} /> */}
             <div className="flex flex-wrap justify-center mx-auto w-[70%]">

@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {RefObject, useEffect, useRef, useState} from 'react';
 import './SectionWhyMe.css';
 
 import IC1 from '../../public/images/why-choose-us/IC1';
@@ -9,6 +9,8 @@ import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 import Image from 'next/image';
 
 const SectionWhyMe = () => {
+  const [cardRefs, setCardRefs] = useState<RefObject<HTMLDivElement>[]>([]);
+
   const sectionData = [
     {
       title: 'MERN Stack Expertise',
@@ -40,7 +42,10 @@ const SectionWhyMe = () => {
     },
   ];
 
-  const cardRefs = sectionData.map(() => useRef<HTMLDivElement>(null));
+  useEffect(() => {
+    setCardRefs(sectionData.map(() => React.createRef()));
+  }, []);
+
   const visibilityStates = useIntersectionObserver(cardRefs, {
     threshold: 0.6,
   });

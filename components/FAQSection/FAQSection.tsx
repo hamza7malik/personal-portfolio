@@ -19,41 +19,30 @@ const FAQSection = () => {
 
   const accordionData = [
     {
-      title: 'Why invest in Dubai?',
-      summary:
-        "Investing in Dubai offers high rental yields and capital appreciation due to its vibrant economy, strategic location, and status as a global business hub. A tax-free environment, combined with a stable political climate and world-class infrastructure, makes Dubai an attractive destination for investors looking to maximize returns and secure their financial future. Moreover, the city's commitment to innovation and sustainability ensures long-term growth and opportunities in the property market.",
+      title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit?',
+      summary: 'Lorem',
     },
     {
-      title: 'What are the types of properties offered?',
-      summary:
-        "Investing in Dubai offers high rental yields and capital appreciation due to its vibrant economy, strategic location, and status as a global business hub. A tax-free environment, combined with a stable political climate and world-class infrastructure, makes Dubai an attractive destination for investors looking to maximize returns and secure their financial future. Moreover, the city's commitment to innovation and sustainability ensures long-term growth and opportunities in the property market.",
+      title: '',
+      summary: '',
     },
     {
-      title:
-        "How can investors benefit from Dubai's growing real estate market?",
-      summary:
-        "Investing in Dubai offers high rental yields and capital appreciation due to its vibrant economy, strategic location, and status as a global business hub. A tax-free environment, combined with a stable political climate and world-class infrastructure, makes Dubai an attractive destination for investors looking to maximize returns and secure their financial future. Moreover, the city's commitment to innovation and sustainability ensures long-term growth and opportunities in the property market.",
+      title: '',
+      summary: '',
     },
     {
-      title:
-        'What are the financing options available for purchasing a property?',
-      summary:
-        "Investing in Dubai offers high rental yields and capital appreciation due to its vibrant economy, strategic location, and status as a global business hub. A tax-free environment, combined with a stable political climate and world-class infrastructure, makes Dubai an attractive destination for investors looking to maximize returns and secure their financial future. Moreover, the city's commitment to innovation and sustainability ensures long-term growth and opportunities in the property market.",
-    },
-    {
-      title: 'Can international clients purchase properties?',
-      summary:
-        "Investing in Dubai offers high rental yields and capital appreciation due to its vibrant economy, strategic location, and status as a global business hub. A tax-free environment, combined with a stable political climate and world-class infrastructure, makes Dubai an attractive destination for investors looking to maximize returns and secure their financial future. Moreover, the city's commitment to innovation and sustainability ensures long-term growth and opportunities in the property market.",
+      title: '',
+      summary: '',
     },
   ];
 
   return (
     <section>
-      <div className="container">
+      {/* <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="section-left">
             <h2 className="pb-12">Frequently Asked Questions</h2>
-            <div className="accordion-wrap ">
+            <div className="accordion-wrap">
               {accordionData.map((item, index) => (
                 <Accordion
                   key={index}
@@ -93,7 +82,7 @@ const FAQSection = () => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

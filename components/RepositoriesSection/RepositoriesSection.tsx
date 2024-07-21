@@ -9,8 +9,15 @@ import Link from 'next/link';
 import ArrowButton from '../ArrowButton/ArrowButton';
 import axios from 'axios';
 
+type Repository = {
+  id: number;
+  name: string;
+  html_url: string;
+  [key: string]: any; // Optional: If there are other properties you're not using, but want to include them.
+};
+
 const RepositoriesSection = () => {
-  const [repositories, setRepositories] = useState([]);
+  const [repositories, setRepositories] = useState<Repository[]>([]);
 
   const github = axios.create({
     baseURL: 'https://api.github.com',
@@ -92,7 +99,7 @@ const RepositoriesSection = () => {
                 spaceBetween: 40,
               },
             }}>
-            {repositories.map((repos, index) => (
+            {repositories.map((repos: Repository, index: number) => (
               <SwiperSlide key={index}>
                 {/* <img src="images/repositories-section/1.png" alt="" /> */}
                 <a target="_blank" href={repos?.html_url}>

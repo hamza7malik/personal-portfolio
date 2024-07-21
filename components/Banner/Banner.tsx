@@ -3,15 +3,7 @@ import './Banner.css';
 import CTAPrimary from '../CTAPrimary/CTAPrimary';
 import Link from 'next/link';
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 const Banner = () => {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
-
   const skills = [
     'React.js',
     'React Native',
@@ -29,14 +21,14 @@ const Banner = () => {
       <div className="c-banner-content text-white container" data-aos="fade-up">
         <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-center">
           <div className="banner-right text-white col-span-2">
-            <span className="greeting-tag">HI! I'M,</span> <br />
+            <span className="greeting-tag">HI! I&apos;M,</span> <br />
             <h1 className="mx-auto mt-10">
               HAMZA MAIK, <br />{' '}
               <span className="text-[#1fea00]">MERN STACK </span>
               DEVELOPER
             </h1>
             <p className="text-white my-8">
-              🚀 Passionate MERN Stack Developer | UAE 🇦🇪 | Let's Build
+              🚀 Passionate MERN Stack Developer | UAE 🇦🇪 | Let&apos;s Build
               Together!
             </p>
             {/* <CTAPrimary text={'Get Started'} link={'#'} /> */}
