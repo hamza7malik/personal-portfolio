@@ -9,15 +9,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import './FAQSection.css'; // Your custom CSS
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 const FAQSection = () => {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
-
   const [expanded, setExpanded] = useState<string | false>(false);
 
   const handleChange =
@@ -98,7 +90,6 @@ const FAQSection = () => {
               className="ml-auto"
               src="images/character/2_4.png"
               alt="funkaar-Faq Section"
-              data-aos="fade-left"
             />
           </div>
         </div>

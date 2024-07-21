@@ -17,23 +17,26 @@ const NavigationBar = () => {
             <div className="c-nav-wrapper hidden lg:block  my-auto">
               <ul className="c-nav-ul text-white flex gap-10">
                 <li>
-                  <a href="">About</a>
+                  <a href="#about-section">About</a>
+                </li>
+                {/* <li>
+                  <a href="portfolio-section">Portfolio</a>
+                </li> */}
+                <li>
+                  <a href="#repositories-section">Repositories</a>
                 </li>
                 <li>
-                  <a href="">Portfolio</a>
-                </li>
-                <li>
-                  <a href="">Repositories</a>
-                </li>
-                <li>
-                  <a href="">Contact</a>
+                  <a href="#footer-section">Contact</a>
                 </li>
               </ul>
             </div>
             {/* <a href="" className="c-nav-cat-1">
               Become An Agent
             </a> */}
-            <a href="" className="c-nav-cat-2">
+            <a
+              href="/Hamza_Malik_MERN_Stack_Developer.pdf"
+              className="c-nav-cat-2"
+              download>
               Download Resume
             </a>
           </div>
@@ -62,25 +65,23 @@ const NavigationBar = () => {
         <div className="c-logo-wrapper p-4">funkaar</div>
         <ul className="text-white pt-8">
           <li className="p-4">
-            <a href="">About</a>
+            <a href="#about-section">About</a>
+          </li>
+          {/* <li className="p-4">
+            <a href="#portfolio-section">Portfolio</a>
+          </li> */}
+          <li className="p-4">
+            <a href="#repositories-section">Repositories</a>
           </li>
           <li className="p-4">
-            <a href="">Portfolio</a>
+            <a href="#footer-section">Contact</a>
           </li>
           <li className="p-4">
-            <a href="">Repositories</a>
-          </li>
-          <li className="p-4">
-            <a href="">Contact</a>
-          </li>
-          <li className="p-4 border-t border-t-[#fbf7ed] w-[90%]">
-            <a href="" className="c-nav-cat-1">
-              Become An Agent
-            </a>
-          </li>
-          <li className="p-4">
-            <a href="" className="c-nav-cat-2">
-              Get In Touch
+            <a
+              href="/Hamza_Malik_MERN_Stack_Developer.pdf"
+              className="c-nav-cat-2"
+              download>
+              Download Resume
             </a>
           </li>
         </ul>

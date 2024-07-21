@@ -3,11 +3,12 @@ import Banner from '../components/Banner/Banner';
 import RepositoriesSection from '../components/RepositoriesSection/RepositoriesSection';
 import FAQSection from '../components/FAQSection/FAQSection';
 import NavigationBar from '../components/NavigationBar/NavigationBar';
-import SectionWhoWeAre from '../components/SectionWhoWeAre/SectionWhoWeAre';
-import SectionWhyChooseUs from '../components/SectionWhyChooseUs/SectionWhyChooseUs';
+import SectionWhyMe from '../components/SectionWhyMe/SectionWhyMe';
 import PortfolioSection from '../components/PortfolioSection/PortfolioSection';
 import Footer from '../components/Footer/Footer';
 import BannerV2 from '../components/Banner/BannerV2';
+import ExperienceSection from '../components/ExperienceSection/ExperienceSection';
+import SectionAboutMe from '../components/SectionAboutMe/SectionAboutMe';
 
 export default function Home() {
   return (
@@ -15,11 +16,7 @@ export default function Home() {
       <Head>
         <title>Hamza Malik - Portfolio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Audiowide&family=Genos:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet"
@@ -29,10 +26,11 @@ export default function Home() {
 
       <BannerV2 />
       {/* <Banner /> */}
-      <SectionWhoWeAre />
-      <SectionWhyChooseUs />
-      <PortfolioSection />
-      <FAQSection />
+      <SectionAboutMe />
+      <SectionWhyMe />
+      <ExperienceSection />
+      {/* <PortfolioSection /> */}
+      {/* <FAQSection /> */}
       <RepositoriesSection />
     </div>
   );

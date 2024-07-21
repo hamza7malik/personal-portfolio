@@ -29,15 +29,6 @@ const BannerV2 = () => {
     'Next.js / Nuxt.js',
   ];
 
-  useGSAP(() => {
-    gsap.to('.testAnim', {
-      duration: 3,
-      rotation: 360,
-      scale: 2,
-      repeat: -1,
-    });
-  });
-
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -103,7 +94,9 @@ const BannerV2 = () => {
             <span className="greeting-tag">HI! I'M,</span> <br />
             <h1 className="mx-auto mt-10">
               HAMZA MAIK, <br />{' '}
-              <span className="text-[var(--accent-color)]">MERN STACK </span>
+              <span className="px-3 bg-[var(--accent-color)] text-white">
+                MERN STACK
+              </span>{' '}
               DEVELOPER
             </h1>
             <p className="text-white my-8">

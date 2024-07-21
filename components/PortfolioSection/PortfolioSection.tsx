@@ -6,14 +6,7 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 const PortfolioSection = () => {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
   return (
     <section className="pt-0">
       <div
@@ -35,7 +28,6 @@ const PortfolioSection = () => {
                     className="mx-auto scale-125 pb-3"
                     src="/images/portfolio/icons/1.svg"
                     alt=""
-                    data-aos="fade-up"
                   />
                   <span className="text-white text-center">
                     Rooftop Infinity Pools
@@ -46,7 +38,6 @@ const PortfolioSection = () => {
                     className="mx-auto scale-125 pb-3"
                     src="/images/portfolio/icons/2.svg"
                     alt=""
-                    data-aos="fade-down"
                   />
                   <span className="text-white text-center">
                     Rooftop Infinity Pools
@@ -57,7 +48,6 @@ const PortfolioSection = () => {
                     className="mx-auto scale-125 pb-3"
                     src="/images/portfolio/icons/3.svg"
                     alt=""
-                    data-aos="fade-up"
                   />
                   <span className="text-white text-center">
                     Rooftop Infinity Pools
@@ -68,7 +58,6 @@ const PortfolioSection = () => {
                     className="mx-auto scale-125 pb-3"
                     src="/images/portfolio/icons/4.svg"
                     alt=""
-                    data-aos="fade-down"
                   />
                   <span className="text-white text-center">
                     Rooftop Infinity Pools
@@ -79,7 +68,6 @@ const PortfolioSection = () => {
                     className="mx-auto scale-125 pb-3"
                     src="/images/portfolio/icons/5.svg"
                     alt=""
-                    data-aos="fade-up"
                   />
                   <span className="text-white text-center">
                     Rooftop Infinity Pools

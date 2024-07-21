@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  pagesDirectory: "./pages",
+  pagesDirectory: './pages',
 };
 
 export default nextConfig;

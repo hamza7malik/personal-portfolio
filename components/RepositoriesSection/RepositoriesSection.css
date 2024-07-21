@@ -1,15 +1,15 @@
-.blog-card h3 {
-  font-size: 32px;
-  font-weight: 100;
-  font-family: "Genos", sans-serif;
+.repos-card h3 {
+  font-size: 22px;
+  /* font-weight: 100; */
+  font-family: 'Genos', sans-serif;
   transition: color 0.4s ease, transform 0.4s ease;
 }
-.blog-card-content-wrap .blog-card-title {
+.repos-card-content-wrap .repos-card-title {
   transform: translateY(60px); /* Start with some offset */
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-.blog-card-content-wrap .know-more-btn {
+.repos-card-content-wrap .know-more-btn {
   color: var(--primary-color);
   opacity: 0;
   visibility: hidden;
@@ -19,13 +19,13 @@
 
 /* ---hovers------ */
 
-.blog-card:hover .know-more-btn {
+.repos-card:hover .know-more-btn {
   opacity: 1;
   visibility: visible;
   transform: translateY(0); /* Move it to its final position */
 }
 
-.blog-card:hover .blog-card-content-wrap .blog-card-title {
+.repos-card:hover .repos-card-content-wrap .repos-card-title {
   transform: translateY(0);
 }
 
@@ -37,11 +37,8 @@
 @media (max-width: 992px) {
 }
 @media (max-width: 768px) {
-  .blog-card h3 {
-    font-size: 19px;
-    font-weight: 100;
-    font-family: "Genos", sans-serif;
-    transition: color 0.4s ease, transform 0.4s ease;
+  .repos-card h3 {
+    font-size: 22px;
   }
 }
 @media (max-width: 576px) {

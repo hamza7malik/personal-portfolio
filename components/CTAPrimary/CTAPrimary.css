@@ -1,9 +1,5 @@
 .primary-cta {
-  background: linear-gradient(
-    to right,
-    var(--accent-color) 0%,
-    var(--accent-dark) 100%
-  );
+  background-color: var(--accent-color);
   transition: all 0.4s ease;
   border-radius: var(--border-radius);
   padding: 12px 48px;
@@ -20,11 +16,7 @@
   color: var(--accent-dark);
 }
 .primary-cta-outlined:hover {
-  background: linear-gradient(
-    to right,
-    var(--accent-color) 0%,
-    var(--accent-dark) 100%
-  );
+  background-color: var(--accent-color);
   border: none;
   padding: 12px 48px;
   margin-top: 40px;

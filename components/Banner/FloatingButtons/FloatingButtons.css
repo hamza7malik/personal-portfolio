@@ -1,0 +1,17 @@
+.floating-button {
+  transform: scale(1);
+  background-color: white;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.floating-button:hover {
+  transform: scale(1.1);
+  background-color: var(--accent-color);
+}
+.floating-button:hover svg {
+  fill: var(--section-light);
+}
+.floating-button svg {
+  fill: var(--primary-light);
+}

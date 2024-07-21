@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 // import CTAPrimary from "../CTAPrimary/CTAPrimary";
 import CTAPrimary from '../CTAPrimary/CTAPrimary';
 import {Swiper, SwiperSlide} from 'swiper/react';
@@ -7,48 +7,62 @@ import 'swiper/css';
 import './RepositoriesSection.css';
 import Link from 'next/link';
 import ArrowButton from '../ArrowButton/ArrowButton';
+import axios from 'axios';
 
 const RepositoriesSection = () => {
-  const blogData = [
-    {
-      title:
-        "Investing in Dubai's Thriving Real Estate Market: A Guide to Off-Plan Properties",
-      url: '#',
-      image: 'images/repositories-section/1.png',
+  const [repositories, setRepositories] = useState([]);
+
+  const github = axios.create({
+    baseURL: 'https://api.github.com',
+    headers: {
+      Authorization: `token ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`,
     },
-    {
-      title:
-        'Smart Homes, Smarter Investments: The Rise of Technology in Dubai Real Estate',
-      url: '#',
-      image: 'images/repositories-section/2.png',
-    },
-    {
-      title:
-        "The Future is Green: Sustainable Living in Dubai's New Developments",
-      url: '#',
-      image: 'images/repositories-section/3.png',
-    },
-    {
-      title:
-        'Investing in Dubai’s Thriving Real Estate Market: A Guide to Off-Plan Properties',
-      url: '#',
-      image: 'images/repositories-section/1.png',
-    },
-  ];
+  });
+
+  async function fetchPublicRepositories() {
+    try {
+      const response = await github.get(`/users/hamza7malik/repos`);
+      setRepositories(response.data);
+      return response.data;
+    } catch (error) {
+      console.error('Error fetching repositories:', error);
+      return [];
+    }
+  }
+  useEffect(() => {
+    fetchPublicRepositories();
+  });
+  const [randomImages, setRandomImages] = useState<Number[]>([]);
+  useEffect(() => {
+    if (repositories.length) {
+      for (let i = 0; i < repositories.length; i++) {
+        randomImages.push(getRandomNumber());
+      }
+    }
+  }, [repositories]);
+  function getRandomNumber() {
+    return Math.floor(Math.random() * 44) + 1;
+  }
   return (
-    <section className="pt-0">
+    <section className="" id="repositories-section">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           <div>
             <h2 className="pb-5">Repositories</h2>
             <p className="w-[100%] sm:w-[70%]">
-              From buying guides to the latest industry updates, learn
-              everything you need to know about the real estate market in the
-              UAE.
+              Discover my open-source projects and contributions, showcasing my
+              skills and passion for coding.
             </p>
           </div>
           <div className="ml-0 md:ml-auto pt-10 md:pt-0">
-            <CTAPrimary text="Know More" link="#" outlined={true} />
+            <div>
+              <CTAPrimary
+                link="https://github.com/hamza7malik/"
+                blank
+                text="Github"
+                outlined={true}
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -78,24 +92,33 @@ const RepositoriesSection = () => {
                 spaceBetween: 40,
               },
             }}>
-            {blogData.map((blog, index) => (
+            {repositories.map((repos, index) => (
               <SwiperSlide key={index}>
                 {/* <img src="images/repositories-section/1.png" alt="" /> */}
-                <div
-                  className="blog-card bg-cover bg-center w-full flex items-end h-[381px] "
-                  style={{
-                    backgroundImage: `url('${blog.image}')`,
-                  }}>
-                  <div className="blog-card-content-wrap w-full">
-                    <div className="blog-card-title px-4 md:px-12">
-                      <h3 className="text-white">{blog.title}</h3>
-                    </div>
+                <a target="_blank" href={repos?.html_url}>
+                  <div
+                    className="repos-card bg-cover bg-center w-full flex items-end h-[381px] "
+                    style={{
+                      backgroundImage: `url('/images/planets/${randomImages[index]}.png')`,
+                    }}>
+                    <div className="repos-card-content-wrap w-full bg-gradient-to-t from-[var(--primary-color)] to-transparent">
+                      <div className="repos-card-title px-4 md:px-12">
+                        <h3 className="text-white font-bold">
+                          {repos?.name.length > 20
+                            ? repos.name.substring(0, 20) + '...'
+                            : repos?.name}
+                        </h3>
+                      </div>
 
-                    <div className="know-more-btn px-4 md:px-12 pb-12 pt-5 bg-gradient-to-t from-[var(--primary-color)] to-transparent">
-                      <ArrowButton text={'Know More'} link={blog.url} />
+                      <div className="know-more-btn px-4 md:px-12 pb-12 pt-5 ">
+                        <ArrowButton
+                          text={'Know More'}
+                          link={repos?.html_url}
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </SwiperSlide>
             ))}
           </Swiper>

@@ -2,7 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --primary-color: #181818;
   --primary-light: #181818;
@@ -62,7 +64,10 @@ section {
   background-color: var(--section-light);
   color: var(--primary-color);
 }
-
+.flip-horizontal {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
 /* ----------responsiveness---------- */
 @media (max-width: 1400px) {
 }

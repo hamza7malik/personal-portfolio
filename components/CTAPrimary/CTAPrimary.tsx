@@ -1,19 +1,20 @@
-import React from "react";
-import "./CTAPrimary.css";
-import Link from "next/link";
+import React from 'react';
+import './CTAPrimary.css';
+import Link from 'next/link';
 
 type CTAPropTypes = {
   text: string;
-  link: string;
+  link?: string;
   outlined?: boolean;
+  blank?: boolean;
 };
 
-const CTAPrimary = ({ text, link, outlined }: CTAPropTypes) => {
+const CTAPrimary = ({text, link, outlined, blank}: CTAPropTypes) => {
   return (
     <Link
-      className={outlined ? "primary-cta-outlined" : " primary-cta"}
-      href={link}
-    >
+      target={blank ? '_blank' : ''}
+      className={outlined ? 'primary-cta-outlined' : ' primary-cta'}
+      href={link ? link : '#'}>
       {text}
     </Link>
   );
