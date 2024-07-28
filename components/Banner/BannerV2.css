@@ -72,4 +72,7 @@
     width: 75%;
     font-size: 14px;
   }
+  .skill-list-item {
+    font-size: 0.8em;
+  }
 }

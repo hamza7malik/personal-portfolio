@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const MessageCTAIcon = () => {
   return (
@@ -7,8 +7,7 @@ const MessageCTAIcon = () => {
       height="30"
       viewBox="0 0 30 30"
       fill="current"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+      xmlns="http://www.w3.org/2000/svg">
       <path d="M10 13.75C10 13.0596 10.5596 12.5 11.25 12.5H18.75C19.4404 12.5 20 13.0596 20 13.75C20 14.4404 19.4404 15 18.75 15H11.25C10.5596 15 10 14.4404 10 13.75Z" />
       <path d="M11.25 17.5C10.5596 17.5 10 18.0596 10 18.75C10 19.4404 10.5596 20 11.25 20H15C15.6904 20 16.25 19.4404 16.25 18.75C16.25 18.0596 15.6904 17.5 15 17.5H11.25Z" />
       <path

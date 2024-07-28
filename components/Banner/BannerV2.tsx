@@ -75,7 +75,7 @@ const BannerV2 = () => {
 
   return (
     <div
-      className="hero-main-wrap bg-[var(--primary-color)] w-full h-[100%] overflow-hidden"
+      className="hero-main-wrap bg-[var(--primary-color)] bg-center bg-cover w-full h-[100%] overflow-hidden"
       style={{backgroundImage: "url('/images/layered-hero/6_sky.png')"}}>
       {/* <div className="sticky top-0 h-[100%] overflow-hidden">
         <img
@@ -84,7 +84,9 @@ const BannerV2 = () => {
           alt="Hamza Malik-Hero"
         />
       </div> */}
-      <div className="c-banner-content text-white container" data-aos="fade-up">
+      <div
+        className="c-banner-content text-white relative container z-10"
+        data-aos="fade-up">
         <div className="grid grid-cols-1 justify-center items-center">
           <div className="banner-right text-white col-span-2 text-center my-auto mt-40">
             <span className="greeting-tag">HI! I&apos;M,</span> <br />
@@ -100,11 +102,11 @@ const BannerV2 = () => {
               Together!
             </p>
             {/* <CTAPrimary text={'Get Started'} link={'#'} /> */}
-            <div className="flex flex-wrap justify-center mx-auto w-[70%]">
+            <div className=" flex-wrap justify-center mx-auto w-[70%] flex">
               {skills.map((skill, index) => (
                 <span
                   key={index}
-                  className="skill-list-item ml-3 mt-7"
+                  className="skill-list-item ml-3 mt-2 sm:mt-7"
                   data-aos="zoom-in-right">
                   {skill}
                 </span>
@@ -119,25 +121,25 @@ const BannerV2 = () => {
           </div>
         </div>
       </div>
-      <div className="hero-img-wrap col-span-1  mx-auto relative h-64 sm:h-[100vh]">
+      <div className="hero-img-wrap col-span-1  mx-auto relative h-48 sm:h-[70vh] md:h-[100vh]">
         <div className="slide-down-element absolute top-24"></div>
-        <div className="absolute bottom-0 sm:bottom-16 planets-layer">
+        <div className="absolute bottom-0 sm:bottom-16 planets-layer w-full">
           <img
-            className=""
+            className="w-full"
             src="images/layered-hero/5_planets.png"
             alt="Hamza Malik-Hero"
           />
         </div>
-        <div className="absolute -bottom-12 sm:-bottom-32 buildings-layer">
+        <div className="absolute -bottom-12 sm:-bottom-32 buildings-layer w-full">
           <img
-            className=""
+            className="w-full"
             src="images/layered-hero/3_buildings.png"
             alt="Hamza Malik-Hero"
           />
         </div>
-        <div className="absolute bottom-0 sm:bottom-20 floor-layer">
+        <div className="absolute bottom-0 sm:bottom-20 floor-layer w-full">
           <img
-            className=""
+            className="w-full"
             src="images/layered-hero/2_floor.png"
             alt="Hamza Malik-Hero"
           />
