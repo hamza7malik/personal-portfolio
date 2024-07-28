@@ -68,11 +68,12 @@
     font-size: 36px;
   }
   .c-banner-content p {
-    margin: 10px auto 30px auto;
+    margin: 10px auto 10px auto;
     width: 75%;
     font-size: 14px;
   }
   .skill-list-item {
     font-size: 0.8em;
+    padding: 4px 8px;
   }
 }

@@ -15,11 +15,12 @@ const BannerV2 = () => {
     'React Native',
     'Redux',
     'Node.js',
+    'MongoDB',
     'Jest',
-    'Test Driven Development (TDD)',
     'Vue Js',
     'CI / CD',
     'Next.js / Nuxt.js',
+    'TDD',
   ];
 
   useEffect(() => {
@@ -92,12 +93,12 @@ const BannerV2 = () => {
             <span className="greeting-tag">HI! I&apos;M,</span> <br />
             <h1 className="mx-auto mt-10">
               HAMZA MAIK, <br />{' '}
-              <span className="px-3 bg-[var(--accent-color)] text-white">
+              <span className="px-3 bg-[var(--primary-color)] text-white">
                 MERN STACK
               </span>{' '}
               DEVELOPER
             </h1>
-            <p className="text-white my-8">
+            <p className="text-white my-2 sm:my-8">
               Passionate MERN Stack Developer | UAE 🇦🇪 | Let&apos;s Build
               Together!
             </p>
