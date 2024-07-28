@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="container ">
         <div className="grid grid-cols-1 md:grid-cols-12">
           <div className="md:col-span-4">
-            <div className="footer-left py-20">
+            <div className="footer-left pb-10 pt-20  md:py-20">
               <div className="c-logo-wrapper">funkaar</div>
               {/* <h2 className="pt-6 pb-3 pr-10 sm:pr-0">
                 Subscribe to our newsletter
@@ -50,7 +50,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="md:col-span-8">
-            <div className="footer-right py-0 md:py-20 pl-5 md:pl-20">
+            <div className="footer-right py-0 md:py-20 pl-0 md:pl-20">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-[inherit]">
                 <div className="footer-col">
                   <h3 className="pb-3 text-white">Quick Links</h3>
