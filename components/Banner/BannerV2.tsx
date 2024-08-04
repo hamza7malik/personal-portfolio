@@ -1,12 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import './BannerV2.css';
-import CTAPrimary from '../CTAPrimary/CTAPrimary';
-import Link from 'next/link';
-
-import {duration} from '@mui/material';
 
 import gsap from 'gsap';
-import {useGSAP} from '@gsap/react';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 
 const BannerV2 = () => {
@@ -77,11 +72,11 @@ const BannerV2 = () => {
   return (
     <div
       className="hero-main-wrap bg-[var(--primary-color)] bg-center bg-cover w-full h-[100%] overflow-hidden"
-      style={{backgroundImage: "url('/images/layered-hero/6_sky.png')"}}>
+      style={{backgroundImage: "url('/images/layered-hero/6_sky.webp')"}}>
       {/* <div className="sticky top-0 h-[100%] overflow-hidden">
         <img
           className=""
-          src="images/layered-hero/1_rocks.png"
+          src="images/layered-hero/1_rocks.webp"
           alt="Hamza Malik-Hero"
         />
       </div> */}
@@ -127,27 +122,27 @@ const BannerV2 = () => {
         <div className="absolute bottom-0 sm:bottom-16 planets-layer w-full">
           <img
             className="w-full"
-            src="images/layered-hero/5_planets.png"
+            src="images/layered-hero/5_planets.webp"
             alt="Hamza Malik-Hero"
           />
         </div>
         <div className="absolute -bottom-12 sm:-bottom-32 buildings-layer w-full">
           <img
             className="w-full"
-            src="images/layered-hero/3_buildings.png"
+            src="images/layered-hero/3_buildings.webp"
             alt="Hamza Malik-Hero"
           />
         </div>
         <div className="absolute bottom-0 sm:bottom-20 floor-layer w-full">
           <img
             className="w-full"
-            src="images/layered-hero/2_floor.png"
+            src="images/layered-hero/2_floor.webp"
             alt="Hamza Malik-Hero"
           />
         </div>
 
         {/* <img
-          src="images/layered-hero/1_rocks.png"
+          src="images/layered-hero/1_rocks.webp"
           className="absolute top-3"
           alt=""
         /> */}

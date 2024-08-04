@@ -34,7 +34,7 @@ const NavigationBar = () => {
               Become An Agent
             </a> */}
             <a
-              href="/Hamza_Malik_MERN_Stack_Developer.pdf"
+              href="/Hamza_Malik_Frontend-Focused_MERN_Developer.pdf"
               className="c-nav-cat-2"
               download>
               Download Resume
@@ -47,7 +47,7 @@ const NavigationBar = () => {
               }`}
               src={
                 isNav
-                  ? 'images/navigation/cross.png'
+                  ? 'images/navigation/cross.webp'
                   : 'images/navigation/ham.svg'
               }
               alt="Nav-Icon"
@@ -78,7 +78,7 @@ const NavigationBar = () => {
           </li>
           <li className="p-4">
             <a
-              href="/Hamza_Malik_MERN_Stack_Developer.pdf"
+              href="/Hamza_Malik_Frontend-Focused_MERN_Developer.pdf"
               className="c-nav-cat-2"
               download>
               Download Resume

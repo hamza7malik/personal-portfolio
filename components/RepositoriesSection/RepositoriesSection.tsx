@@ -101,12 +101,12 @@ const RepositoriesSection = () => {
             }}>
             {repositories.map((repos: Repository, index: number) => (
               <SwiperSlide key={index}>
-                {/* <img src="images/repositories-section/1.png" alt="" /> */}
+                {/* <img src="images/repositories-section/1.webp" alt="" /> */}
                 <a target="_blank" href={repos?.html_url}>
                   <div
                     className="repos-card bg-cover bg-center w-full flex items-end h-[381px] "
                     style={{
-                      backgroundImage: `url('/images/planets/${randomImages[index]}.png')`,
+                      backgroundImage: `url('/images/planets/${randomImages[index]}.webp')`,
                     }}>
                     <div className="repos-card-content-wrap w-full bg-gradient-to-t from-[var(--primary-color)] to-transparent">
                       <div className="repos-card-title px-4 md:px-12">

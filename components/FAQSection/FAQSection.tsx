@@ -77,7 +77,7 @@ const FAQSection = () => {
           <div className="section-right hidden lg:block">
             <img
               className="ml-auto"
-              src="images/character/2_4.png"
+              src="images/character/2_4.webp"
               alt="funkaar-Faq Section"
             />
           </div>

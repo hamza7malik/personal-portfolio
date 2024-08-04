@@ -52,7 +52,7 @@ const Banner = () => {
           <div className="hero-img-wrap col-span-1 py-32">
             <img
               className="h-[80%] w-[80%]"
-              src="images/hero/avatar_6.png"
+              src="images/hero/avatar_6.webp"
               alt="Hamza Malik-Hero"
             />
           </div>

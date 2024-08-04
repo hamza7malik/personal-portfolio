@@ -28,7 +28,7 @@ const SectionAboutMe = () => {
             </p>
           </div>
           <div className="">
-            <img src="/images/character/1.png" alt="" />
+            <img src="/images/character/1.webp" alt="" />
           </div>
         </div>
       </div>
