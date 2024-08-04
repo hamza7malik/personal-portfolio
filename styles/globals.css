@@ -68,6 +68,31 @@ section {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+/* Webkit-based browsers */
+.scrollable-content::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the track */
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color); /* Color of the scroll thumb */
+  border-radius: 10px; /* Roundness of the scroll thumb */
+  border: 3px solid #f1f1f1; /* Padding around the scroll thumb */
+}
+
+.scrollable-content::-webkit-scrollbar-thumb:hover {
+  background-color: darken(var(--accent-color), 10%); /* Darken on hover */
+}
+
+/* Firefox */
+.scrollable-content {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: var(--accent-color) #f1f1f1; /* Scroll thumb and track color */
+}
+
 /* ----------responsiveness---------- */
 @media (max-width: 1400px) {
 }
