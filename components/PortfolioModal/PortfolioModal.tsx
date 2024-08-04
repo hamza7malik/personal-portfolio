@@ -9,8 +9,8 @@ const style = {
   transform: 'translate(-50%, -50%)',
   width: '90%',
   height: '90vh',
-  maxHeight: '90vh', // Ensure the modal doesn't exceed viewport height
-  overflowY: 'auto', // Enable vertical scrolling
+  maxHeight: '90vh',
+  overflowY: 'auto',
   bgcolor: 'var(--primary-color)',
   border: '2px solid #000',
   boxShadow: 24,
@@ -43,20 +43,16 @@ const PortfolioModal = ({
       <Box
         sx={{
           ...style,
-          overflowY: 'auto',
-          maxHeight: '80vh',
           position: 'relative',
           scrollbarWidth: '4px',
           scrollbarColor: 'var(--primary-color) var(--primary-color)',
-
-          /* Webkit-based browsers */
           '&::-webkit-scrollbar': {
-            width: '4px', // Thinner scrollbar
-            backgroundColor: 'var(--primary-color)', // Black track background
+            width: '4px',
+            backgroundColor: 'var(--primary-color)',
           },
           '&::-webkit-scrollbar-thumb': {
             backgroundColor: 'var(--primary-color)',
-            borderRadius: '80px', // Rounded corners
+            borderRadius: '80px',
           },
         }}
         className={'scrollable-content'}>
