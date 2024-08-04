@@ -124,6 +124,13 @@ const ExperienceSection = () => {
       stack: 'React js, Next js, Node js, MongoDB',
       text: "Tranquil is a premier real estate developer in Dubai, known for reshaping the city's skyline with a commitment to quality, innovation, and sustainability. Founded by a visionary team of industry veterans, Tranquil Infra Developers creates not just homes but lifestyles, blending cutting-edge design with unparalleled craftsmanship to set a new standard for refined living. My contribution involved building the frontend of the Tranquil website using Next.js and TypeScript, translating Figma designs into high-quality, fully responsive, and pixel-perfect layouts. The project included reusable and scalable components, GSAP animations, and API integration, ensuring a seamless and engaging user experience.",
     },
+    atss: {
+      icon: '/images/portfolio/portfolio/atss.webp',
+      image: '/images/portfolio/portfolio/modal/atss.webp',
+      title: 'ATSS',
+      stack: 'Next js',
+      text: "ATSS is a project under the Mawarid Digital & Communications Group (MDCG), focusing on advancing IoT, IIoT, satellite communications, and systems integration for government, defense, and business sectors. Leveraging MDCG's connectivity and cloud infrastructure, ATSS supports content localization to meet national security requirements and 2030 economic goals. My contributions included developing the website using Next.js, translating high-quality Figma designs into a fully responsive and pixel-perfect layout. I also handled API integration and optimization to ensure excellent performance.",
+    },
   };
   const [currentPortfolio, setCurrentPortfolio] = useState({
     icon: '',
@@ -346,14 +353,15 @@ const ExperienceSection = () => {
                       alt=""
                     />
                   </div>
-                  {/* <div
+                  <div
                     className="rounded-full cursor-pointer"
                     onClick={() =>
                       handleOpen(
-                        portfolioData.heightsMobile.image,
-                        portfolioData.heightsMobile.title,
-                        portfolioData.heightsMobile.stack,
-                        portfolioData.heightsMobile.text,
+                        portfolioData.atss.icon,
+                        portfolioData.atss.image,
+                        portfolioData.atss.title,
+                        portfolioData.atss.stack,
+                        portfolioData.atss.text,
                       )
                     }>
                     <Image
@@ -363,7 +371,7 @@ const ExperienceSection = () => {
                       height={40}
                       alt=""
                     />
-                  </div> */}
+                  </div>
                   <div
                     className="rounded-full cursor-pointer"
                     onClick={() =>
