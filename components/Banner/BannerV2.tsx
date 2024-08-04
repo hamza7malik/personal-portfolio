@@ -56,7 +56,7 @@ const BannerV2 = () => {
     // Slide down effect for slide-down-element
     tl.to(
       '.slide-down-element',
-      {y: '180%', opacity: 0, duration: 0.5, ease: 'power2.out'},
+      {y: '180%', opacity: 0, scale: 0.8, duration: 1.5, ease: 'power2.out'},
       0,
     ); // Start immediately
 
@@ -118,7 +118,7 @@ const BannerV2 = () => {
         </div>
       </div>
       <div className="hero-img-wrap col-span-1  mx-auto relative h-48 sm:h-[70vh] md:h-[100vh]">
-        <div className="slide-down-element absolute top-24"></div>
+        <div className="slide-down-element w-20 h-20 sm:w-24 sm:h-24 absolute top-4 sm:top-12"></div>
         <div className="absolute bottom-0 sm:bottom-16 planets-layer w-full">
           <img
             className="w-full"
