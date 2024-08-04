@@ -2,7 +2,11 @@ import React, {useEffect, useState} from 'react';
 // import CTAPrimary from "../CTAPrimary/CTAPrimary";
 import CTAPrimary from '../CTAPrimary/CTAPrimary';
 import {Swiper, SwiperSlide} from 'swiper/react';
+
+import {Autoplay, Navigation} from 'swiper/modules';
+import SwiperCore from 'swiper/core';
 import 'swiper/css';
+SwiperCore.use([Autoplay, Navigation]);
 
 import './RepositoriesSection.css';
 import Link from 'next/link';
@@ -73,7 +77,7 @@ const RepositoriesSection = () => {
           </div>
         </div>
       </div>
-      <div className="container pr-[] lg:pr-0">
+      <div className="pr-[] lg:pr-0">
         <div className="swiper-wrapper mt-12">
           <Swiper
             spaceBetween={32}
