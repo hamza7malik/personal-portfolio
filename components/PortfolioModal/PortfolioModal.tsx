@@ -9,6 +9,8 @@ const style = {
   transform: 'translate(-50%, -50%)',
   width: '90%',
   height: '90vh',
+  maxHeight: '90vh', // Ensure the modal doesn't exceed viewport height
+  overflowY: 'auto', // Enable vertical scrolling
   bgcolor: 'var(--primary-color)',
   border: '2px solid #000',
   boxShadow: 24,
@@ -38,13 +40,32 @@ const PortfolioModal = ({
       onClose={handleClose}
       aria-labelledby="modal-modal-title"
       aria-describedby="modal-modal-description">
-      <Box sx={style}>
+      <Box
+        sx={{
+          ...style,
+          overflowY: 'auto',
+          maxHeight: '80vh',
+          position: 'relative',
+          scrollbarWidth: '4px',
+          scrollbarColor: 'var(--primary-color) var(--primary-color)',
+
+          /* Webkit-based browsers */
+          '&::-webkit-scrollbar': {
+            width: '4px', // Thinner scrollbar
+            backgroundColor: 'var(--primary-color)', // Black track background
+          },
+          '&::-webkit-scrollbar-thumb': {
+            backgroundColor: 'var(--primary-color)',
+            borderRadius: '80px', // Rounded corners
+          },
+        }}
+        className={'scrollable-content'}>
         <Button
           onClick={handleClose}
-          style={{position: 'absolute', top: 10, right: 10}}>
+          style={{position: 'fixed', top: 10, right: 10}}>
           &times;
         </Button>
-        <div className=" grid grid-cols-1 md:grid-cols-2 items-center justify-center">
+        <div className="scrollable-content grid grid-cols-1 md:grid-cols-2 items-center justify-center">
           <div>
             <Image
               className="p-0 md:p-12"
@@ -58,7 +79,7 @@ const PortfolioModal = ({
           </div>
           <div>
             <Image
-              className="mb-2 rounded-lg"
+              className="mb-2 rounded-lg w-4 h-4 sm:w-8 sm:h-8 md:w-24 md:h-w-24 lg:w-24 lg:h-24"
               src={currentPortfolio.icon}
               height={100}
               width={100}
