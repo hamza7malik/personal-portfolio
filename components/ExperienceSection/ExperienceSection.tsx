@@ -74,6 +74,13 @@ const ExperienceSection = () => {
 
   const [open, setOpen] = useState(false);
   const portfolioData = {
+    inProgress: {
+      icon: '/images/portfolio/portfolio/inProgress.webp',
+      image: '/images/portfolio/portfolio/modal/inProgress.webp',
+      title: 'Portfolio in Progress',
+      stack: '',
+      text: "I'm currently working on this portfolio item. Check back soon for updates and fresh details!",
+    },
     checkitup: {
       icon: '/images/portfolio/portfolio/checkitup.webp',
       image: '/images/portfolio/portfolio/modal/checkitup.webp',
@@ -207,6 +214,44 @@ const ExperienceSection = () => {
                     <Image
                       className="rounded-full w-8 sm:w-10"
                       src={'/images/portfolio/portfolio/checkitup.webp'}
+                      width={40}
+                      height={40}
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    className="rounded-full cursor-pointer"
+                    onClick={() =>
+                      handleOpen(
+                        portfolioData.inProgress.icon,
+                        portfolioData.inProgress.image,
+                        portfolioData.inProgress.title,
+                        portfolioData.inProgress.stack,
+                        portfolioData.inProgress.text,
+                      )
+                    }>
+                    <Image
+                      className="rounded-full w-8 sm:w-10"
+                      src={'/images/portfolio/portfolio/inProgress.webp'}
+                      width={40}
+                      height={40}
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    className="rounded-full cursor-pointer"
+                    onClick={() =>
+                      handleOpen(
+                        portfolioData.inProgress.icon,
+                        portfolioData.inProgress.image,
+                        portfolioData.inProgress.title,
+                        portfolioData.inProgress.stack,
+                        portfolioData.inProgress.text,
+                      )
+                    }>
+                    <Image
+                      className="rounded-full w-8 sm:w-10"
+                      src={'/images/portfolio/portfolio/inProgress.webp'}
                       width={40}
                       height={40}
                       alt=""
