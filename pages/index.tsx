@@ -9,6 +9,7 @@ import Footer from '../components/Footer/Footer';
 import BannerV2 from '../components/Banner/BannerV2';
 import ExperienceSection from '../components/ExperienceSection/ExperienceSection';
 import SectionAboutMe from '../components/SectionAboutMe/SectionAboutMe';
+import ContactForm from '../components/ContactForm/ContactForm';
 
 export default function Home() {
   return (
@@ -32,6 +33,11 @@ export default function Home() {
       {/* <PortfolioSection /> */}
       {/* <FAQSection /> */}
       <RepositoriesSection />
+      <section className="">
+        <div className="container">
+          <ContactForm />
+        </div>
+      </section>
     </div>
   );
 }

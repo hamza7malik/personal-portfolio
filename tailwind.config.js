@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      width: {
+        'fit-content': 'fit-content',
+      },
       spacing: {
         'container-padding': '15px', // Default padding for all screens
         'container-padding-sm': '15px', // Small screens
