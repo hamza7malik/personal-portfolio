@@ -35,7 +35,18 @@ export default function Home() {
       <RepositoriesSection />
       <section className="">
         <div className="container">
-          <ContactForm />
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className="w-[90%]">
+              <h2 className="mb-4">Contact</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Reprehenderit eaque soluta ipsam dicta inventore itaque esse
+                repellendus distinctio sunt quod veritatis exercitationem, sint,
+                maxime ex. Corrupti eaque blanditiis eveniet minima!
+              </p>
+            </div>
+            <ContactForm />
+          </div>
         </div>
       </section>
     </div>
