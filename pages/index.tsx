@@ -33,7 +33,7 @@ export default function Home() {
       {/* <PortfolioSection /> */}
       {/* <FAQSection /> */}
       <RepositoriesSection />
-      <section className="bg-white">
+      {/* <section className="bg-white">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 bg-white px-7 py-14 ">
             <div className="w-[90%]">
@@ -48,7 +48,7 @@ export default function Home() {
             <ContactForm />
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
