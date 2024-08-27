@@ -15,7 +15,8 @@ const ContactForm = () => {
           <div className="mb-8">
             <p className="text-white">Name</p>
             <input
-              className="w-full rounded-sm mt-1 h-8"
+              className="w-full rounded-sm mt-1 h-8 p-2"
+              placeholder="Your name"
               type="text"
               name="name"
               id="name"
@@ -24,7 +25,8 @@ const ContactForm = () => {
           <div className="mb-8">
             <p className="text-white">E-mail</p>
             <input
-              className="w-full rounded-sm mt-1 h-8"
+              className="w-full rounded-sm mt-1 h-8 p-2"
+              placeholder="Your email"
               type="email"
               name="email"
               id="email"
@@ -33,7 +35,8 @@ const ContactForm = () => {
           <div className="mb-8">
             <p className="text-white">Message</p>
             <textarea
-              className="w-full rounded-sm mt-1"
+              placeholder="Your Message"
+              className="w-full rounded-sm mt-1 p-2"
               rows={5}
               name="message"
               id="message"></textarea>
