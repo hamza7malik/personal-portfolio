@@ -9,6 +9,7 @@ import Footer from '../components/Footer/Footer';
 import BannerV2 from '../components/Banner/BannerV2';
 import ExperienceSection from '../components/ExperienceSection/ExperienceSection';
 import SectionAboutMe from '../components/SectionAboutMe/SectionAboutMe';
+import ContactForm from '../components/ContactForm/ContactForm';
 
 export default function Home() {
   return (
@@ -32,6 +33,22 @@ export default function Home() {
       {/* <PortfolioSection /> */}
       {/* <FAQSection /> */}
       <RepositoriesSection />
+      <section className="">
+        <div className="container">
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className="w-[90%]">
+              <h2 className="mb-4">Contact</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Reprehenderit eaque soluta ipsam dicta inventore itaque esse
+                repellendus distinctio sunt quod veritatis exercitationem, sint,
+                maxime ex. Corrupti eaque blanditiis eveniet minima!
+              </p>
+            </div>
+            <ContactForm />
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
