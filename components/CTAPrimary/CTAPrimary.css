@@ -5,6 +5,7 @@
   padding: 12px 48px;
   margin-top: 40px;
   color: #fff;
+  text-align: center;
 }
 
 .primary-cta-outlined {
@@ -14,6 +15,7 @@
   padding: 12px 48px;
   margin-top: 40px;
   color: var(--accent-dark);
+  text-align: center;
 }
 .primary-cta-outlined:hover {
   background-color: var(--accent-color);

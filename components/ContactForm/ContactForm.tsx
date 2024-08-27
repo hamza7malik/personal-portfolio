@@ -39,7 +39,7 @@ const ContactForm = () => {
               id="message"></textarea>
           </div>
           <div onClick={handleSendMessage}>
-            <CTAPrimary text="send" />
+            <CTAPrimary text="send" full />
           </div>
         </form>
       </div>
