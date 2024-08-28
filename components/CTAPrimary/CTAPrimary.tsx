@@ -11,7 +11,7 @@ type CTAPropTypes = {
 };
 
 const CTAPrimary = ({text, link, outlined, blank, full}: CTAPropTypes) => {
-  return (
+  return link ? (
     <Link
       target={blank ? '_blank' : ''}
       className={
@@ -19,9 +19,18 @@ const CTAPrimary = ({text, link, outlined, blank, full}: CTAPropTypes) => {
           ? `primary-cta-outlined ${full && 'w-full block'}`
           : `primary-cta ${full && 'w-full block'}`
       }
-      href={link ? link : '#'}>
+      href={link}>
       {text}
     </Link>
+  ) : (
+    <button
+      className={
+        outlined
+          ? `primary-cta-outlined ${full && 'w-full block'}`
+          : `primary-cta ${full && 'w-full block'}`
+      }>
+      {text}
+    </button>
   );
 };
 
