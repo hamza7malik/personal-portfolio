@@ -1,17 +1,47 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './ContactForm.css';
 import CTAPrimary from '../CTAPrimary/CTAPrimary';
 
 const ContactForm = () => {
   const handleSendMessage = () => {
     console.log('send message!');
+    console.log(formValues);
+    validateForm();
+  };
+
+  const [formValues, setFormValues] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const handleInputChange = (val: string, name: string) => {
+    setFormValues(prev => ({...prev, [name]: val}));
+  };
+
+  //test form values
+  useEffect(() => {
+    console.log(formValues);
+  }, [formValues]);
+
+  const [formError, setFormError] = useState('');
+  const validateForm = () => {
+    if (
+      formValues.email === '' ||
+      formValues.name === '' ||
+      formValues.message === ''
+    ) {
+      setFormError('Please fill all form fields');
+    } else {
+      setFormError('');
+    }
   };
 
   return (
     <div className="px-7 py-14 bg-[var(--primary-color)]">
       <div className="w-full">
         <h2 className="text-white mb-10">Message</h2>
-        <form action="mx-auto">
+        <form>
           <div className="mb-8">
             <p className="text-white">Name</p>
             <input
@@ -20,6 +50,8 @@ const ContactForm = () => {
               type="text"
               name="name"
               id="name"
+              value={formValues.name}
+              onChange={e => handleInputChange(e.target.value, e.target.name)}
             />
           </div>
           <div className="mb-8">
@@ -30,6 +62,8 @@ const ContactForm = () => {
               type="email"
               name="email"
               id="email"
+              value={formValues.email}
+              onChange={e => handleInputChange(e.target.value, e.target.name)}
             />
           </div>
           <div className="mb-8">
@@ -39,12 +73,19 @@ const ContactForm = () => {
               className="w-full rounded-sm mt-1 p-2"
               rows={5}
               name="message"
-              id="message"></textarea>
+              id="message"
+              value={formValues.message}
+              onChange={e =>
+                handleInputChange(e.target.value, e.target.name)
+              }></textarea>
           </div>
-          <div onClick={handleSendMessage}>
-            <CTAPrimary text="send" full />
+          <div>
+            <p className="text-orange-400">{formError}</p>
           </div>
         </form>
+        <div onClick={handleSendMessage}>
+          <CTAPrimary text="send" full />
+        </div>
       </div>
     </div>
   );
