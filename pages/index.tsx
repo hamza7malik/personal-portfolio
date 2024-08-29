@@ -47,26 +47,26 @@ export default function Home() {
                 maxime ex. Corrupti eaque blanditiis eveniet minima!
               </p>
               <div className="mt-4">
-                <div className="flex items-center gap-3">
-                  <div className="rounded-full flex items-center mb-4 justify-center h-14 w-14 bg-[var(--accent-color)]">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="rounded-full flex items-center justify-center h-14 w-14 bg-[var(--accent-color)]">
                     <p className="text-white">E</p>
                   </div>
                   <p className="text-white">crhamza7@gmail.com</p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="rounded-full flex items-center mb-4 justify-center h-14 w-14 bg-[var(--accent-color)]">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="rounded-full flex items-center justify-center h-14 w-14 bg-[var(--accent-color)]">
                     <p className="text-white">PH</p>
                   </div>
                   <p className="text-white">+971 523125845</p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="rounded-full flex items-center mb-4 justify-center h-14 w-14 bg-[var(--accent-color)]">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="rounded-full flex items-center justify-center h-14 w-14 bg-[var(--accent-color)]">
                     <p className="text-white">L</p>
                   </div>
                   <p className="text-white">Dubai, UAE</p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="rounded-full flex items-center mb-4 justify-center h-14 w-14 bg-[var(--accent-color)]">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="rounded-full flex items-center justify-center h-14 w-14 bg-[var(--accent-color)]">
                     <p className="text-white">V</p>
                   </div>
                   <p className="text-white w-[80%] md:w-[60%]">
