@@ -40,7 +40,10 @@ const ContactForm = () => {
   return (
     <div className="px-7 py-14 bg-[var(--primary-color)]">
       <div className="w-full">
-        <h2 className="text-white mb-10">Message</h2>
+        <div className="mb-10">
+          <h2 className="text-white">Message</h2>
+          <p className="my-1 text-white">Impressed? send me an email !</p>
+        </div>
         <form>
           <div className="mb-8">
             <p className="text-white">Name</p>
