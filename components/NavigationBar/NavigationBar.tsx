@@ -26,7 +26,7 @@ const NavigationBar = () => {
                   <a href="#repositories-section">Repositories</a>
                 </li>
                 <li>
-                  <a href="#footer-section">Contact</a>
+                  <a href="#contect-section">Contact</a>
                 </li>
               </ul>
             </div>
@@ -74,7 +74,7 @@ const NavigationBar = () => {
             <a href="#repositories-section">Repositories</a>
           </li>
           <li className="p-4">
-            <a href="#footer-section">Contact</a>
+            <a href="#contect-section">Contact</a>
           </li>
           <li className="p-4">
             <a
