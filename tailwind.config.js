@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundColor: {
+        accent: '#7f36db',
+      },
       width: {
         'fit-content': 'fit-content',
       },
