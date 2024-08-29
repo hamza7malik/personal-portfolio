@@ -464,7 +464,7 @@ const ExperienceSection = () => {
               <div>
                 <h1 className="text-white">Get in Touch!</h1>
                 <div className="mt-6">
-                  <CTAPrimary link="#footer-section" text="Contact" />
+                  <CTAPrimary link="#contect-section" text="Contact" />
                 </div>
               </div>
             </div>

@@ -34,6 +34,7 @@ export default function Home() {
       {/* <FAQSection /> */}
       <RepositoriesSection />
       <section
+        id="contect-section"
         className="bg-cover bg-center"
         style={{backgroundImage: 'url(./images/full-bgs/3.png)'}}>
         <div className="container">
