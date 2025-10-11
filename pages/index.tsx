@@ -1,15 +1,17 @@
 import Head from 'next/head';
-import Banner from '../components/Banner/Banner';
-import RepositoriesSection from '../components/RepositoriesSection/RepositoriesSection';
 import FAQSection from '../components/FAQSection/FAQSection';
 import NavigationBar from '../components/NavigationBar/NavigationBar';
-import SectionWhyMe from '../components/SectionWhyMe/SectionWhyMe';
 import PortfolioSection from '../components/PortfolioSection/PortfolioSection';
 import Footer from '../components/Footer/Footer';
-import BannerV2 from '../components/Banner/BannerV2';
-import ExperienceSection from '../components/ExperienceSection/ExperienceSection';
-import SectionAboutMe from '../components/SectionAboutMe/SectionAboutMe';
 import ContactForm from '../components/ContactForm/ContactForm';
+
+import {
+  BannerV2,
+  SectionAboutMe,
+  SectionWhyMe,
+  ExperienceSection,
+  RepositoriesSection,
+} from '../components';
 
 export default function Home() {
   return (
@@ -22,11 +24,11 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Audiowide&family=Genos:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet"
         />
-        {/* <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> */}
       </Head>
 
       <BannerV2 />
       {/* <Banner /> */}
+      <FAQSection />
       <SectionAboutMe />
       <SectionWhyMe />
       <ExperienceSection />
