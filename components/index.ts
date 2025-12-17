@@ -1,6 +1,7 @@
 import ArrowButton from './ArrowButton';
 import {Banner, BannerV2} from './Banner';
 import ContactForm from './ContactForm';
+import ContactSection from './ContactSection';
 import CTAPrimary from './CTAPrimary';
 import ExperienceSection from './ExperienceSection';
 import FAQSection from './FAQSection';
@@ -8,7 +9,6 @@ import Footer from './Footer';
 import Layout from './Layout';
 import NavigationBar from './NavigationBar';
 import PortfolioModal from './PortfolioModal';
-import PortfolioSection from './PortfolioSection';
 import RepositoriesSection from './RepositoriesSection';
 import SectionAboutMe from './SectionAboutMe';
 import SectionWhyMe from './SectionWhyMe';
@@ -19,6 +19,7 @@ export {
   Banner,
   BannerV2,
   ContactForm,
+  ContactSection,
   CTAPrimary,
   ExperienceSection,
   FAQSection,
@@ -26,7 +27,6 @@ export {
   Layout,
   NavigationBar,
   PortfolioModal,
-  PortfolioSection,
   RepositoriesSection,
   SectionAboutMe,
   SectionWhyMe,

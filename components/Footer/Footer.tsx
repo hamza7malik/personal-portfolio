@@ -1,16 +1,8 @@
 import React from 'react';
-
-import './Footer.css';
-import CTAPrimary from '../CTAPrimary/CTAPrimary';
 import Link from 'next/link';
-
-import TwitterIcon from '../../public/images/footer/TwitterIcon';
-import InstagramIcon from '../../public/images/footer/InstagramIcon';
 import LinkedinIcon from '../../public/images/footer/LinkedinIcon';
-import YoutubeIcon from '../../public/images/footer/YoutubeIcon';
-import TiktokIcon from '../../public/images/footer/GithubIcon';
-import FacebookIcon from '../../public/images/footer/FacebookIcon';
 import GithubIcon from '../../public/images/footer/GithubIcon';
+import './Footer.css';
 
 const Footer = () => {
   return (
@@ -22,17 +14,6 @@ const Footer = () => {
           <div className="md:col-span-4">
             <div className="footer-left pb-10 pt-20  md:py-20">
               <div className="c-logo-wrapper">funkaar</div>
-              {/* <h2 className="pt-6 pb-3 pr-10 sm:pr-0">
-                Subscribe to our newsletter
-              </h2>
-              <input
-                className="block mb-8 p-2 focus:outline-none 
-               focus-visible:border-b-2
-               border-b-2 border-b-[#e3dccc]"
-                type="text"
-                placeholder="Enter your email ID"
-              />
-              <CTAPrimary text="Subscribe" link="#" outlined /> */}
               <div className="socials-footer flex gap-5  items-center mt-8">
                 <a
                   href="https://www.linkedin.com/in/hamza7malik/"
@@ -57,15 +38,9 @@ const Footer = () => {
                   <Link href="#about-section">
                     <p className="text-white">About</p>
                   </Link>
-                  {/* <Link href="#">
-                    <p className="text-white">Portfolio</p>
-                  </Link> */}
                   <Link href="#repositories-section">
                     <p className="text-white">Repositories</p>
                   </Link>
-                  {/* <Link href="#">
-                    <p className="text-white">Contact</p>
-                  </Link> */}
                 </div>
 
                 <div className="footer-col">

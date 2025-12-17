@@ -1,49 +1,14 @@
-import React, {RefObject, useEffect, useRef, useState} from 'react';
-import './SectionWhyMe.css';
-
-import IC1 from '../../public/images/why-choose-us/IC1';
-import IC2 from '../../public/images/why-choose-us/IC2';
-import IC3 from '../../public/images/why-choose-us/IC3';
-import IC4 from '../../public/images/why-choose-us/IC4';
-import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+import React, {RefObject, useEffect, useState} from 'react';
 import Image from 'next/image';
+import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+import {whyMeData} from '../../data/whyMeData';
+import './SectionWhyMe.css';
 
 const SectionWhyMe = () => {
   const [cardRefs, setCardRefs] = useState<RefObject<HTMLDivElement>[]>([]);
 
-  const sectionData = [
-    {
-      title: 'MERN Stack Expertise',
-      description:
-        "I rock the MERN stack! From MongoDB to React, I build sleek, scalable apps that just work. Let's turn ideas into awesome digital realities together!",
-      image: 'url("/images/section/1.webp")',
-      icon: '/images/icons/1.webp',
-    },
-    {
-      title: 'Code Ninja',
-      description:
-        "I write code that's reusable and easy to scale. Think of me as your coding wizard—making tech dreams come true, one line at a time.",
-      image: 'url("/images/section/2.webp")',
-      icon: '/images/icons/2.webp',
-    },
-    {
-      title: 'Passion for Tech',
-      description:
-        "I geek out on software dev! It's not just a job; it's my playground. I'm always learning and tweaking to stay ahead in this fast-paced world.",
-      image: 'url("/images/section/3.webp")',
-      icon: '/images/icons/3.webp',
-    },
-    {
-      title: 'Exceeding Expectations',
-      description:
-        "Need deadlines met with style? I've got you covered. I love blowing minds with solutions that go above and beyond what's expected. Let's push limits!",
-      image: 'url("/images/section/4.webp")',
-      icon: '/images/icons/4.webp',
-    },
-  ];
-
   useEffect(() => {
-    setCardRefs(sectionData.map(() => React.createRef()));
+    setCardRefs(whyMeData.map(() => React.createRef()));
   }, []);
 
   const visibilityStates = useIntersectionObserver(cardRefs, {
@@ -61,7 +26,7 @@ const SectionWhyMe = () => {
         </div>
       </div>
       <div className="reveal-cards-wrapper-desktop hidden md:hidden grid-cols-4 ">
-        {sectionData.map((item, index) => (
+        {whyMeData.map((item, index) => (
           <div
             key={index}
             className="reveal-card flex justify-center items-center px-16"
@@ -80,7 +45,7 @@ const SectionWhyMe = () => {
 
       {/* --------------mobile-part--- */}
       <div className="reveal-cards-wrapper-mobile grid  grid-cols-1 md:grid-cols-4 ">
-        {sectionData.map((item, index) => (
+        {whyMeData.map((item, index) => (
           <div
             key={index}
             ref={cardRefs[index]}

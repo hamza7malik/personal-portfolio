@@ -1,17 +1,16 @@
-import React, {useEffect, useState} from 'react';
-// import CTAPrimary from "../CTAPrimary/CTAPrimary";
-import CTAPrimary from '../CTAPrimary/CTAPrimary';
+import React, {useEffect, useState, useMemo} from 'react';
+import axios from 'axios';
+import Image from 'next/image';
 import {Swiper, SwiperSlide} from 'swiper/react';
-
 import {Autoplay, Navigation} from 'swiper/modules';
 import SwiperCore from 'swiper/core';
-import 'swiper/css';
-SwiperCore.use([Autoplay, Navigation]);
-
-import './RepositoriesSection.css';
-import Link from 'next/link';
+import CTAPrimary from '../CTAPrimary/CTAPrimary';
 import ArrowButton from '../ArrowButton/ArrowButton';
-import axios from 'axios';
+import {getRandomNumber} from '../../utils/randomHelpers';
+import 'swiper/css';
+import './RepositoriesSection.css';
+
+SwiperCore.use([Autoplay, Navigation]);
 
 type Repository = {
   id: number;
@@ -42,18 +41,14 @@ const RepositoriesSection = () => {
   }
   useEffect(() => {
     fetchPublicRepositories();
-  });
-  const [randomImages, setRandomImages] = useState<Number[]>([]);
-  useEffect(() => {
+  }, []);
+  const randomImages = useMemo(() => {
     if (repositories.length) {
-      for (let i = 0; i < repositories.length; i++) {
-        randomImages.push(getRandomNumber());
-      }
+      return repositories.map(() => getRandomNumber());
     }
+    return [];
   }, [repositories]);
-  function getRandomNumber() {
-    return Math.floor(Math.random() * 44) + 1;
-  }
+
   return (
     <section className="" id="repositories-section">
       <div className="container">
@@ -105,7 +100,6 @@ const RepositoriesSection = () => {
             }}>
             {repositories.map((repos: Repository, index: number) => (
               <SwiperSlide key={index}>
-                {/* <img src="images/repositories-section/1.webp" alt="" /> */}
                 <a target="_blank" href={repos?.html_url}>
                   <div
                     className="repos-card bg-cover bg-center w-full flex items-end h-[381px] "

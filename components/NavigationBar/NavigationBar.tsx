@@ -19,9 +19,6 @@ const NavigationBar = () => {
                 <li>
                   <a href="#about-section">About</a>
                 </li>
-                {/* <li>
-                  <a href="portfolio-section">Portfolio</a>
-                </li> */}
                 <li>
                   <a href="#repositories-section">Repositories</a>
                 </li>
@@ -30,9 +27,6 @@ const NavigationBar = () => {
                 </li>
               </ul>
             </div>
-            {/* <a href="" className="c-nav-cat-1">
-              Become An Agent
-            </a> */}
             <a
               href="/Hamza_Malik_Frontend-Focused_MERN_Developer.pdf"
               className="c-nav-cat-2"
@@ -55,7 +49,6 @@ const NavigationBar = () => {
           </div>
         </div>
       </div>
-      {/* --------mobile-nav-menu----------- */}
       <div
         className={
           isNav
@@ -67,9 +60,6 @@ const NavigationBar = () => {
           <li className="p-4">
             <a href="#about-section">About</a>
           </li>
-          {/* <li className="p-4">
-            <a href="#portfolio-section">Portfolio</a>
-          </li> */}
           <li className="p-4">
             <a href="#repositories-section">Repositories</a>
           </li>

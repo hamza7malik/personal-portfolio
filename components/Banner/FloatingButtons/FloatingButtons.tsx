@@ -1,23 +1,13 @@
-import React, {useEffect} from 'react';
-
-import './FloatingButtons.css';
+import React from 'react';
 import Link from 'next/link';
+import gsap from 'gsap';
+import {useGSAP} from '@gsap/react';
 import MessageCTAIcon from '../../../public/images/CTA-Tray/MessageCTAIcon';
 import PhoneCTAIcon from '../../../public/images/CTA-Tray/PhoneCTAIcon';
 import WhatsappCTAIcon from '../../../public/images/CTA-Tray/WhatsappCTAIcon';
-
-import gsap from 'gsap';
-import {useGSAP} from '@gsap/react';
+import './FloatingButtons.css';
 
 const FloatingButtons = () => {
-  // useEffect(() => {
-  //   gsap.from(".floating-button", {
-  //     y: "150px",
-  //     duration: 7,
-  //     ease: "elastic.out",
-  //     stagger: 0.05,
-  //   });
-  // }, []);
   return (
     <div>
       <div className="c-banner-cta-tray right-3 bottom-5 md:right-10 md:bottom-20 fixed z-10">
