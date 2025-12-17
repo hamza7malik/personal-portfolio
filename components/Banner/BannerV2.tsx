@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect} from 'react';
 import './BannerV2.css';
 
 import gsap from 'gsap';
@@ -73,13 +73,6 @@ const BannerV2 = () => {
     <div
       className="hero-main-wrap bg-[var(--primary-color)] bg-center bg-cover w-full h-[100%] overflow-hidden"
       style={{backgroundImage: "url('/images/layered-hero/6_sky.webp')"}}>
-      {/* <div className="sticky top-0 h-[100%] overflow-hidden">
-        <img
-          className=""
-          src="images/layered-hero/1_rocks.webp"
-          alt="Hamza Malik-Hero"
-        />
-      </div> */}
       <div
         className="c-banner-content text-white relative container z-10"
         data-aos="fade-up">
@@ -97,7 +90,6 @@ const BannerV2 = () => {
               Passionate MERN Stack Developer | UAE 🇦🇪 | Let&apos;s Build
               Together!
             </p>
-            {/* <CTAPrimary text={'Get Started'} link={'#'} /> */}
             <div className=" flex-wrap justify-center mx-auto w-[70%] flex">
               {skills.map((skill, index) => (
                 <span
@@ -107,12 +99,6 @@ const BannerV2 = () => {
                   {skill}
                 </span>
               ))}
-
-              {/* <span
-                className="skill-list-item semi-colon ml-3 mt-7"
-                data-aos="zoom-in-right">
-                ;
-              </span> */}
             </div>
           </div>
         </div>
@@ -140,12 +126,6 @@ const BannerV2 = () => {
             alt="Hamza Malik-Hero"
           />
         </div>
-
-        {/* <img
-          src="images/layered-hero/1_rocks.webp"
-          className="absolute top-3"
-          alt=""
-        /> */}
       </div>
     </div>
   );

@@ -1,7 +1,5 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './Banner.css';
-import CTAPrimary from '../CTAPrimary/CTAPrimary';
-import Link from 'next/link';
 
 const Banner = () => {
   const skills = [
@@ -31,7 +29,6 @@ const Banner = () => {
               🚀 Passionate MERN Stack Developer | UAE 🇦🇪 | Let&apos;s Build
               Together!
             </p>
-            {/* <CTAPrimary text={'Get Started'} link={'#'} /> */}
             <div className="flex flex-wrap">
               {skills.map((skill, index) => (
                 <span

@@ -1,15 +1,21 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
   Typography,
 } from '@mui/material';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import './FAQSection.css';
 
-import './FAQSection.css'; // Your custom CSS
+type AccordionItem = {
+  title: string;
+  summary: string;
+};
+interface FAQSectionProps {
+  accordionData: AccordionItem[];
+}
 
-const FAQSection = () => {
+const FAQSection = ({accordionData}: FAQSectionProps) => {
   const [expanded, setExpanded] = useState<string | false>(false);
 
   const handleChange =
@@ -17,28 +23,9 @@ const FAQSection = () => {
       setExpanded(isExpanded ? panel : false);
     };
 
-  const accordionData = [
-    {
-      title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit?',
-      summary: 'Lorem',
-    },
-    {
-      title: '',
-      summary: '',
-    },
-    {
-      title: '',
-      summary: '',
-    },
-    {
-      title: '',
-      summary: '',
-    },
-  ];
-
   return (
     <section>
-      {/* <div className="container">
+      <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="section-left">
             <h2 className="pb-12">Frequently Asked Questions</h2>
@@ -82,7 +69,7 @@ const FAQSection = () => {
             />
           </div>
         </div>
-      </div> */}
+      </div>
     </section>
   );
 };

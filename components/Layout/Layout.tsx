@@ -1,13 +1,11 @@
-import React, { ReactNode } from "react";
-import NavigationBar from "../NavigationBar/NavigationBar";
-import Footer from "../Footer/Footer";
-import FloatingButtons from "../Banner/FloatingButtons/FloatingButtons";
+import React, {ReactNode} from 'react';
+import {NavigationBar, FloatingButtons, Footer} from '../../components';
 
 type LayoutProps = {
   children: ReactNode;
 };
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout = ({children}: LayoutProps) => {
   return (
     <div className="flex flex-col min-h-screen">
       <NavigationBar />

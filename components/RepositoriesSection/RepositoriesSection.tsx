@@ -1,15 +1,11 @@
 import React, {useEffect, useState} from 'react';
-// import CTAPrimary from "../CTAPrimary/CTAPrimary";
 import CTAPrimary from '../CTAPrimary/CTAPrimary';
 import {Swiper, SwiperSlide} from 'swiper/react';
-
 import {Autoplay, Navigation} from 'swiper/modules';
 import SwiperCore from 'swiper/core';
 import 'swiper/css';
 SwiperCore.use([Autoplay, Navigation]);
-
 import './RepositoriesSection.css';
-import Link from 'next/link';
 import ArrowButton from '../ArrowButton/ArrowButton';
 import axios from 'axios';
 

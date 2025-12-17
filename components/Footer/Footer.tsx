@@ -1,9 +1,7 @@
 import React from 'react';
-
 import './Footer.css';
 import CTAPrimary from '../CTAPrimary/CTAPrimary';
 import Link from 'next/link';
-
 import TwitterIcon from '../../public/images/footer/TwitterIcon';
 import InstagramIcon from '../../public/images/footer/InstagramIcon';
 import LinkedinIcon from '../../public/images/footer/LinkedinIcon';

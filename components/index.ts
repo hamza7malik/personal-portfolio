@@ -13,6 +13,8 @@ import RepositoriesSection from './RepositoriesSection';
 import SectionAboutMe from './SectionAboutMe';
 import SectionWhyMe from './SectionWhyMe';
 import StarrySky from './StarrySky';
+import FloatingButtons from './FloatingButtons';
+import ContactSection from './ContactSection';
 
 export {
   ArrowButton,
@@ -31,4 +33,6 @@ export {
   SectionAboutMe,
   SectionWhyMe,
   StarrySky,
+  FloatingButtons,
+  ContactSection,
 };

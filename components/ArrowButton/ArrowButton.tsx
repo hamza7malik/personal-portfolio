@@ -1,16 +1,15 @@
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
+import React from 'react';
+import './ArrowButton.css';
 
-import "./ArrowButton.css";
-
-type ArrowButtonPropTypes = {
+type ArrowButtonProps = {
   text: string;
   link: string;
 };
 
-const ArrowButton = ({ text, link }: ArrowButtonPropTypes) => {
+const ArrowButton = ({text, link = '#'}: ArrowButtonProps) => {
   return (
-    <Link href={"#"}>
+    <Link href={link}>
       <div className="arrow-btn text-white inline-flex items-center gap-2 pb-2">
         {text}
         <img src="images/arrow-btn/arrow.svg" alt="" />

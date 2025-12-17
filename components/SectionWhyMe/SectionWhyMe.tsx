@@ -5,7 +5,7 @@ import IC1 from '../../public/images/why-choose-us/IC1';
 import IC2 from '../../public/images/why-choose-us/IC2';
 import IC3 from '../../public/images/why-choose-us/IC3';
 import IC4 from '../../public/images/why-choose-us/IC4';
-import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+import {useIntersectionObserver} from '../../hooks';
 import Image from 'next/image';
 
 const SectionWhyMe = () => {
@@ -78,7 +78,7 @@ const SectionWhyMe = () => {
         ))}
       </div>
 
-      {/* --------------mobile-part--- */}
+      {/* --------------mobile-part-------------- */}
       <div className="reveal-cards-wrapper-mobile grid  grid-cols-1 md:grid-cols-4 ">
         {sectionData.map((item, index) => (
           <div

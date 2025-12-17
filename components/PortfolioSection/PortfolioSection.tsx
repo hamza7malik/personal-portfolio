@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './PortfolioSection.css';
 import CTAPrimary from '../CTAPrimary/CTAPrimary';
 import {Swiper, SwiperSlide} from 'swiper/react';
@@ -29,9 +29,7 @@ const PortfolioSection = () => {
                     src="/images/portfolio/icons/1.svg"
                     alt=""
                   />
-                  <span className="text-white text-center">
-                    Rooftop Infinity Pools
-                  </span>
+                  <span className="text-white text-center">Icon Item</span>
                 </div>
                 <div>
                   <img
@@ -39,9 +37,7 @@ const PortfolioSection = () => {
                     src="/images/portfolio/icons/2.svg"
                     alt=""
                   />
-                  <span className="text-white text-center">
-                    Rooftop Infinity Pools
-                  </span>
+                  <span className="text-white text-center">Icon Item</span>
                 </div>
                 <div>
                   <img
@@ -49,9 +45,7 @@ const PortfolioSection = () => {
                     src="/images/portfolio/icons/3.svg"
                     alt=""
                   />
-                  <span className="text-white text-center">
-                    Rooftop Infinity Pools
-                  </span>
+                  <span className="text-white text-center">Icon Item</span>
                 </div>
                 <div>
                   <img
@@ -59,9 +53,7 @@ const PortfolioSection = () => {
                     src="/images/portfolio/icons/4.svg"
                     alt=""
                   />
-                  <span className="text-white text-center">
-                    Rooftop Infinity Pools
-                  </span>
+                  <span className="text-white text-center">Icon Item</span>
                 </div>
                 <div>
                   <img
@@ -69,9 +61,7 @@ const PortfolioSection = () => {
                     src="/images/portfolio/icons/5.svg"
                     alt=""
                   />
-                  <span className="text-white text-center">
-                    Rooftop Infinity Pools
-                  </span>
+                  <span className="text-white text-center">Icon Item</span>
                 </div>
               </div>
             </div>

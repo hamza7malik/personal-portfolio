@@ -1,18 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import './ExperienceSection.css';
 import CTAPrimary from '../CTAPrimary/CTAPrimary';
-import {Swiper, SwiperSlide} from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/navigation';
-
 import gsap from 'gsap';
-import {useGSAP} from '@gsap/react';
-import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import Image from 'next/image';
-import {Button, Typography} from '@mui/material';
 import PortfolioModal from '../PortfolioModal/PortfolioModal';
-import StarrySky from '../StarrySky/StarrySky';
 
 const ExperienceSection = () => {
   useEffect(() => {
@@ -49,7 +42,6 @@ const ExperienceSection = () => {
             end: 'top 0%',
             containerAnimation: tl,
             scrub: true,
-            // markers: true,
           },
         }).from(
           stop.querySelector('.monster-img'),
@@ -63,7 +55,6 @@ const ExperienceSection = () => {
               end: 'top 50%',
               scrub: 2,
               containerAnimation: tl,
-              //   markers: true,
             },
           },
           '<',
@@ -471,9 +462,6 @@ const ExperienceSection = () => {
           </div>
         </div>
       </div>
-      {/* <div className="bg-container">
-        <img src="" alt="" />
-      </div> */}
       <div>
         <PortfolioModal
           currentPortfolio={currentPortfolio}
