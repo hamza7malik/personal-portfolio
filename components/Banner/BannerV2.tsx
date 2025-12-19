@@ -7,18 +7,23 @@ const BannerV2 = () => {
   const skills = [
     'React.js',
     'React Native',
-    'Redux',
     'Node.js',
+    'TypeScript',
+    'Next.js',
+    'Redux Toolkit',
     'MongoDB',
-    'Jest',
-    'Vue Js',
-    'CI / CD',
-    'Next.js / Nuxt.js',
-    'TDD',
+    'AWS',
+    'OpenAI',
+    'Docker',
+    'CI/CD',
+    'Jest/TDD',
   ];
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+
+    // Check if desktop (width >= 768px)
+    const isDesktop = window.innerWidth >= 768;
 
     // Create GSAP timeline
     const tl = gsap.timeline({
@@ -59,6 +64,22 @@ const BannerV2 = () => {
       0,
     ); // Start immediately
 
+    // Animation for background sky (expand/zoom from 100% to 120%) - Desktop only
+    if (isDesktop) {
+      tl.fromTo(
+        '.hero-main-wrap',
+        {
+          backgroundSize: '130%',
+        },
+        {
+          backgroundSize: '120%',
+          duration: 1.5,
+          ease: 'power2.out',
+        },
+        0,
+      ); // Start immediately with other animations
+    }
+
     return () => {
       tl.kill();
       const trigger = ScrollTrigger.getById('hero-trigger');
@@ -71,7 +92,7 @@ const BannerV2 = () => {
   return (
     <div
       className="hero-main-wrap bg-[var(--primary-color)] bg-center bg-cover w-full h-[100%] overflow-hidden"
-      style={{backgroundImage: "url('/images/layered-hero/6_sky.webp')"}}>
+      style={{backgroundImage: "url('/images/layered-hero/6_sky.png')"}}>
       <div
         className="c-banner-content text-white relative container z-10"
         data-aos="fade-up">
@@ -79,15 +100,15 @@ const BannerV2 = () => {
           <div className="banner-right text-white col-span-2 text-center my-auto mt-40">
             <span className="greeting-tag">HI! I&apos;M,</span> <br />
             <h1 className="mx-auto mt-10">
-              HAMZA MAIK, <br />{' '}
+              HAMZA MALIK, <br />{' '}
               <span className="px-3 bg-[var(--primary-color)] text-white">
-                MERN STACK
+                SENIOR FULL STACK
               </span>{' '}
-              DEVELOPER
+              ENGINEER
             </h1>
             <p className="text-white my-2 sm:my-8">
-              Passionate MERN Stack Developer | UAE 🇦🇪 | Let&apos;s Build
-              Together!
+              7+ Years Building Production-Grade Web & Mobile Apps | React,
+              React Native, Node.js | Dubai 🇦🇪
             </p>
             <div className=" flex-wrap justify-center mx-auto w-[70%] flex">
               {skills.map((skill, index) => (
@@ -107,21 +128,21 @@ const BannerV2 = () => {
         <div className="absolute bottom-0 sm:bottom-16 planets-layer w-full">
           <img
             className="w-full"
-            src="images/layered-hero/5_planets.webp"
+            src="images/layered-hero/5_planets.png"
             alt="Hamza Malik-Hero"
           />
         </div>
         <div className="absolute -bottom-12 sm:-bottom-32 buildings-layer w-full">
           <img
             className="w-full"
-            src="images/layered-hero/3_buildings.webp"
+            src="images/layered-hero/3_buildings.png"
             alt="Hamza Malik-Hero"
           />
         </div>
         <div className="absolute bottom-0 sm:bottom-20 floor-layer w-full">
           <img
             className="w-full"
-            src="images/layered-hero/2_floor.webp"
+            src="images/layered-hero/2_floor.png"
             alt="Hamza Malik-Hero"
           />
         </div>

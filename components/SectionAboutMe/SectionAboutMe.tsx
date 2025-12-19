@@ -8,23 +8,28 @@ const SectionAboutMe = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-26 lg:gap-36">
           <div>
             <h3>About Me</h3>
-            <h2 className="my-8">About me in 1 minute</h2>
+            <h2 className="my-8">7+ Years of Full Stack Excellence</h2>
             <p className="pr-0 xxl:pr-64">
-              Dedicated to creating exceptional user experiences through
-              innovative solutions in web and mobile development. Skilled in the
-              MERN stack with expertise in{' '}
+              Senior Full Stack Engineer with 7+ years of experience building
+              and scaling production-grade web and mobile applications for iOS &
+              Android. Proven expertise in{' '}
               <span className="font-medium">
-                React Native, Vue.js, React.js, Node.js, and Next.js.
+                React, React Native, Node.js, TypeScript, and Next.js
               </span>
+              , delivering solutions that serve millions of users.
               <br /> <br />
-              Experienced in building impactful web ad mobile applications with
-              a focus on writing scalable, readable, and reusable code.
-              Proficient in conducting code reviews, providing feedback, and
-              ensuring best practices for enhanced team collaboration and code
-              quality.
+              Specialized in implementing complex features including
+              Apple/Google/Stripe in-app subscription systems, AI-driven
+              capabilities (retrieval-augmented generation pipelines, LLM
+              integrations), and scalable cloud infrastructure on AWS.
+              Experienced in fast-paced startup environments, following Agile
+              methodologies, and collaborating with remote teams across multiple
+              time zones.
               <br /> <br />
-              Committed to continuous learning and growth, always seeking new
-              challenges and opportunities to bring remarkable ideas to life.
+              Passionate about writing clean, maintainable code and building
+              architectures that scale. From mobile app submissions to CI/CD
+              pipelines, I handle the full development lifecycle with precision
+              and attention to detail.
             </p>
           </div>
           <div className="">
