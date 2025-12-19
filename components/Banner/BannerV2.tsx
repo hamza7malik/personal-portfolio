@@ -22,9 +22,6 @@ const BannerV2 = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // Check if desktop (width >= 768px)
-    const isDesktop = window.innerWidth >= 768;
-
     // Create GSAP timeline
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -63,22 +60,6 @@ const BannerV2 = () => {
       {y: '180%', opacity: 0, scale: 0.8, duration: 1.5, ease: 'power2.out'},
       0,
     ); // Start immediately
-
-    // Animation for background sky (expand/zoom from 100% to 120%) - Desktop only
-    if (isDesktop) {
-      tl.fromTo(
-        '.hero-main-wrap',
-        {
-          backgroundSize: '130%',
-        },
-        {
-          backgroundSize: '120%',
-          duration: 1.5,
-          ease: 'power2.out',
-        },
-        0,
-      ); // Start immediately with other animations
-    }
 
     return () => {
       tl.kill();
