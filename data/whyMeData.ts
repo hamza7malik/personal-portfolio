@@ -7,30 +7,30 @@ export interface WhyMeItem {
 
 export const whyMeData: WhyMeItem[] = [
   {
-    title: 'MERN Stack Expertise',
+    title: 'Full-Stack Mastery',
     description:
-      "I rock the MERN stack! From MongoDB to React, I build sleek, scalable apps that just work. Let's turn ideas into awesome digital realities together!",
+      '7+ years building production-grade web and mobile apps with React, React Native, and Node.js. From scalable backends to pixel-perfect UIs—I handle the complete development lifecycle with expertise.',
     image: 'url("/images/section/1.webp")',
     icon: '/images/icons/1.webp',
   },
   {
-    title: 'Code Ninja',
+    title: 'AI & Advanced Features',
     description:
-      "I write code that's reusable and easy to scale. Think of me as your coding wizard—making tech dreams come true, one line at a time.",
+      'Specialized in implementing cutting-edge capabilities: custom RAG pipelines, LLM integrations (OpenAI, Gemini), subscription systems (Apple IAP, Google Play, Stripe), and cloud infrastructure on AWS.',
     image: 'url("/images/section/2.webp")',
     icon: '/images/icons/2.webp',
   },
   {
-    title: 'Passion for Tech',
+    title: 'Production-Ready Code',
     description:
-      "I geek out on software dev! It's not just a job; it's my playground. I'm always learning and tweaking to stay ahead in this fast-paced world.",
+      'I write clean, maintainable, and scalable code following best practices. Experienced in code reviews, TDD, CI/CD pipelines, and delivering solutions that serve millions of users reliably.',
     image: 'url("/images/section/3.webp")',
     icon: '/images/icons/3.webp',
   },
   {
-    title: 'Exceeding Expectations',
+    title: 'Startup Velocity',
     description:
-      "Need deadlines met with style? I've got you covered. I love blowing minds with solutions that go above and beyond what's expected. Let's push limits!",
+      'Thrive in fast-paced environments. Agile methodologies, remote collaboration across time zones, and delivering complex features on tight deadlines—all while maintaining quality and innovation.',
     image: 'url("/images/section/4.webp")',
     icon: '/images/icons/4.webp',
   },
