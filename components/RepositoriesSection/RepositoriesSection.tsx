@@ -22,16 +22,9 @@ type Repository = {
 const RepositoriesSection = () => {
   const [repositories, setRepositories] = useState<Repository[]>([]);
 
-  const github = axios.create({
-    baseURL: 'https://api.github.com',
-    headers: {
-      Authorization: `token ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`,
-    },
-  });
-
   async function fetchPublicRepositories() {
     try {
-      const response = await github.get(`/users/hamza7malik/repos`);
+      const response = await axios.get('/api/github-repos');
       setRepositories(response.data);
       return response.data;
     } catch (error) {

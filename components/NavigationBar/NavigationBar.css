@@ -3,6 +3,13 @@
   font-weight: 800;
   font-size: 2rem;
 }
+
+.c-nav-glass {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
 .c-gradient-fade {
   /* Fallback for older browsers */
   background: linear-gradient(

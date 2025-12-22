@@ -58,7 +58,7 @@ const FAQSection = () => {
             <img
               className="ml-auto"
               src="images/character/2_4.webp"
-              alt="funkaar-Faq Section"
+              alt="HamzaMalik-Faq Section"
             />
           </div>
         </div>

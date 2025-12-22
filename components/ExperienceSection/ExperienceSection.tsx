@@ -130,8 +130,15 @@ const ExperienceSection = () => {
             <div className="last-slide h-[100vh] w-[100vw] container text-center flex justify-center items-center">
               <div>
                 <h1 className="text-white">Get in Touch!</h1>
-                <div className="mt-6">
+                <div className="mt-6 flex gap-4 justify-center">
                   <CTAPrimary link="#footer-section" text="Contact" />
+                  <button
+                    onClick={() => {
+                      window.dispatchEvent(new CustomEvent('openChat'));
+                    }}
+                    className="border border-white text-white transition-all duration-400 rounded-[var(--border-radius)] px-12 py-3 mt-10 hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)]">
+                    Chat with Me
+                  </button>
                 </div>
               </div>
             </div>

@@ -6,6 +6,23 @@
   padding: 10px;
   font-weight: 500;
 }
+
+.hero-sky-bg {
+  animation: skyFlicker 3s ease-in-out infinite;
+}
+
+@keyframes skyFlicker {
+  0%,
+  100% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 0.92;
+    filter: brightness(0.9);
+  }
+}
+
 .c-banner-content h1 {
   color: var(--secondary);
   font-size: 2.5rem;

@@ -1,3 +1,5 @@
+import {calculateYearsOfExperience} from '../utils/calculateExperience';
+
 export interface WhyMeItem {
   title: string;
   description: string;
@@ -5,11 +7,12 @@ export interface WhyMeItem {
   icon: string;
 }
 
+const yearsOfExperience = calculateYearsOfExperience();
+
 export const whyMeData: WhyMeItem[] = [
   {
     title: 'Full-Stack Mastery',
-    description:
-      '7+ years building production-grade web and mobile apps with React, React Native, and Node.js. From scalable backends to pixel-perfect UIs—I handle the complete development lifecycle with expertise.',
+    description: `${yearsOfExperience} years building production-grade web and mobile apps with React, React Native, and Node.js. From scalable backends to pixel-perfect UIs—I handle the complete development lifecycle with expertise.`,
     image: 'url("/images/section/1.webp")',
     icon: '/images/icons/1.webp',
   },

@@ -9,11 +9,11 @@ const NavigationBar = () => {
   };
 
   return (
-    <div className="bg-[var(--primary-color)] w-full py-4 fixed top-0 z-50">
+    <div className="c-nav-glass w-full py-4 fixed top-0 z-50">
       <div className="container mx-auto">
         <div className="c-nav-wrapper flex items-center justify-between">
-          <div className="c-logo-wrapper">funkaar</div>
-          <div className="c-nav-cta-wrapper text-white  gap-3 hidden lg:flex">
+          <div className="c-logo-wrapper">.H.</div>
+          <div className="c-nav-cta-wrapper text-white gap-10 hidden lg:flex">
             <div className="c-nav-wrapper hidden lg:block  my-auto">
               <ul className="c-nav-ul text-white flex gap-10">
                 <li>
@@ -25,10 +25,19 @@ const NavigationBar = () => {
                 <li>
                   <a href="#footer-section">Contact</a>
                 </li>
+                <li>
+                  <button
+                    onClick={() => {
+                      window.dispatchEvent(new CustomEvent('openChat'));
+                    }}
+                    className="cursor-pointer">
+                    Chat
+                  </button>
+                </li>
               </ul>
             </div>
             <a
-              href="/Hamza_Malik_Frontend-Focused_MERN_Developer.pdf"
+              href="/Hamza_Malik_-_Senior_Full_Stack_Engineer_(React,_React_Native,_Node.js).pdf"
               className="c-nav-cat-2"
               download>
               Download Resume
@@ -55,7 +64,7 @@ const NavigationBar = () => {
             ? 'fixed top-0 left-0 w-[70%] bg-[var(--primary-color)] h-full ease-in-out duration-500'
             : 'fixed top-0 left-[-100%] w-[70%] bg-[var(--primary-color)] h-full ease-in-out duration-500'
         }>
-        <div className="c-logo-wrapper p-4">funkaar</div>
+        <div className="c-logo-wrapper p-4">.H.</div>
         <ul className="text-white pt-8">
           <li className="p-4">
             <a href="#about-section">About</a>
@@ -67,8 +76,18 @@ const NavigationBar = () => {
             <a href="#footer-section">Contact</a>
           </li>
           <li className="p-4">
+            <button
+              onClick={() => {
+                window.dispatchEvent(new CustomEvent('openChat'));
+                setIsNav(false);
+              }}
+              className="cursor-pointer">
+              Chat
+            </button>
+          </li>
+          <li className="p-4">
             <a
-              href="/Hamza_Malik_Frontend-Focused_MERN_Developer.pdf"
+              href="/Hamza_Malik_-_Senior_Full_Stack_Engineer_(React,_React_Native,_Node.js).pdf"
               className="c-nav-cat-2"
               download>
               Download Resume

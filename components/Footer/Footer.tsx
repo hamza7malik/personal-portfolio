@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-12">
           <div className="md:col-span-4">
             <div className="footer-left pb-10 pt-20  md:py-20">
-              <div className="c-logo-wrapper">funkaar</div>
+              <div className="c-logo-wrapper">.H.</div>
               <div className="socials-footer flex gap-5  items-center mt-8">
                 <a
                   href="https://www.linkedin.com/in/hamza7malik/"

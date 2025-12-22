@@ -5,8 +5,10 @@ import './globals.css';
 const inter = Inter({subsets: ['latin']});
 
 export const metadata: Metadata = {
-  title: 'funkaar',
-  description: 'funkaar',
+  title:
+    'Hamza Malik - Senior Full Stack Engineer (React, React Native, Node.js)',
+  description:
+    'Hamza Malik - Senior Full Stack Engineer (React, React Native, Node.js)',
 };
 
 export default function RootLayout({

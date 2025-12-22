@@ -3,6 +3,8 @@
   background-color: white;
   transition: all 0.4s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
 }
 
 .floating-button:hover {
@@ -11,7 +13,71 @@
 }
 .floating-button:hover svg {
   fill: var(--section-light);
+  stroke: var(--section-light);
 }
 .floating-button svg {
   fill: var(--primary-light);
+  stroke: var(--primary-light);
+}
+
+.chat-half-circle-btn {
+  width: 80px;
+  height: 40px;
+  background-color: var(--accent-color);
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.chat-half-circle-btn:hover {
+  background-color: var(--accent-dark);
+}
+
+.chat-half-circle-btn svg {
+  color: white;
+}
+
+.typing-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+
+.typing-line {
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  animation: typingAnimation 1.5s ease-in-out infinite;
+}
+
+.typing-line-1 {
+  width: 0;
+  animation-delay: 0s;
+}
+
+.typing-line-2 {
+  width: 0;
+  animation-delay: 0.3s;
+}
+
+.typing-line-3 {
+  width: 0;
+  animation-delay: 0.6s;
+}
+
+@keyframes typingAnimation {
+  0%,
+  100% {
+    width: 0;
+  }
+  50% {
+    width: 24px;
+  }
 }

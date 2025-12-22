@@ -1,9 +1,11 @@
 import React, {useEffect, useRef} from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import {calculateYearsOfExperience} from '../../utils/calculateExperience';
 import './BannerV2.css';
 
 const BannerV2 = () => {
+  const yearsOfExperience = calculateYearsOfExperience();
   const skills = [
     'React.js',
     'React Native',
@@ -40,6 +42,19 @@ const BannerV2 = () => {
       ease: 'power2.out',
     });
 
+    // Sky background expansion animation
+    gsap.to('.hero-sky-bg', {
+      scale: 1.15,
+      transformOrigin: 'center center',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.hero-main-wrap',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: 1,
+      },
+    });
+
     // Animation for buildings-layer (move slightly up)
     tl.to(
       '.buildings-layer',
@@ -71,9 +86,12 @@ const BannerV2 = () => {
   }, []);
 
   return (
-    <div
-      className="hero-main-wrap bg-[var(--primary-color)] bg-center bg-cover w-full h-[100%] overflow-hidden"
-      style={{backgroundImage: "url('/images/layered-hero/6_sky.png')"}}>
+    <div className="hero-main-wrap bg-[var(--primary-color)] w-full h-[100%] overflow-hidden relative">
+      <div
+        className="hero-sky-bg bg-center bg-cover w-full h-full absolute inset-0"
+        style={{
+          backgroundImage: "url('/images/layered-hero/6_sky.png')",
+        }}></div>
       <div
         className="c-banner-content text-white relative container z-10"
         data-aos="fade-up">
@@ -88,9 +106,16 @@ const BannerV2 = () => {
               ENGINEER
             </h1>
             <p className="text-white my-2 sm:my-8">
-              7+ Years Building Production-Grade Web & Mobile Apps | React,
-              React Native, Node.js | Dubai 🇦🇪
+              {yearsOfExperience} Years Building Production-Grade Web & Mobile
+              Apps | React, React Native, Node.js | Dubai 🇦🇪
             </p>
+            <button
+              onClick={() => {
+                window.dispatchEvent(new CustomEvent('openChat'));
+              }}
+              className="chat-cta-button px-8 py-3 bg-white text-black rounded-[var(--border-radius)] font-semibold hover:scale-105 transition-transform duration-300 mt-4 sm:mt-6">
+              Chat with Me
+            </button>
             <div className=" flex-wrap justify-center mx-auto w-[70%] flex">
               {skills.map((skill, index) => (
                 <span
