@@ -23,7 +23,13 @@ const NavigationBar = () => {
                   <a href="#repositories-section">Repositories</a>
                 </li>
                 <li>
-                  <a href="#footer-section">Contact</a>
+                  <button
+                    onClick={() => {
+                      window.dispatchEvent(new CustomEvent('openContact'));
+                    }}
+                    className="cursor-pointer">
+                    Contact
+                  </button>
                 </li>
                 <li>
                   <button
@@ -73,7 +79,14 @@ const NavigationBar = () => {
             <a href="#repositories-section">Repositories</a>
           </li>
           <li className="p-4">
-            <a href="#footer-section">Contact</a>
+            <button
+              onClick={() => {
+                window.dispatchEvent(new CustomEvent('openContact'));
+                setIsNav(false);
+              }}
+              className="cursor-pointer">
+              Contact
+            </button>
           </li>
           <li className="p-4">
             <button

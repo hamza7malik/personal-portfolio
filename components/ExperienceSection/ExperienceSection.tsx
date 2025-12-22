@@ -131,7 +131,13 @@ const ExperienceSection = () => {
               <div>
                 <h1 className="text-white">Get in Touch!</h1>
                 <div className="mt-6 flex gap-4 justify-center">
-                  <CTAPrimary link="#footer-section" text="Contact" />
+                  <button
+                    onClick={() => {
+                      window.dispatchEvent(new CustomEvent('openContact'));
+                    }}
+                    className="primary-cta">
+                    Contact
+                  </button>
                   <button
                     onClick={() => {
                       window.dispatchEvent(new CustomEvent('openChat'));

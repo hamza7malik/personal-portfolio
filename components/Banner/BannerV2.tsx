@@ -109,13 +109,22 @@ const BannerV2 = () => {
               {yearsOfExperience} Years Building Production-Grade Web & Mobile
               Apps | React, React Native, Node.js | Dubai 🇦🇪
             </p>
-            <button
-              onClick={() => {
-                window.dispatchEvent(new CustomEvent('openChat'));
-              }}
-              className="chat-cta-button px-8 py-3 bg-white text-black rounded-[var(--border-radius)] font-semibold hover:scale-105 transition-transform duration-300 mt-4 sm:mt-6">
-              Chat with Me
-            </button>
+            <div className="flex gap-4 justify-center">
+              <button
+                onClick={() => {
+                  window.dispatchEvent(new CustomEvent('openChat'));
+                }}
+                className="chat-cta-button px-8 py-3 border-2 border-white text-white bg-transparent rounded-[var(--border-radius)] font-semibold hover:scale-105 hover:bg-white hover:text-black transition-all duration-300 mt-4 sm:mt-6">
+                Chat with Me
+              </button>
+              <button
+                onClick={() => {
+                  window.dispatchEvent(new CustomEvent('openContact'));
+                }}
+                className="chat-cta-button px-8 py-3 border-2 border-white text-white bg-transparent rounded-[var(--border-radius)] font-semibold hover:scale-105 hover:bg-white hover:text-black transition-all duration-300 mt-4 sm:mt-6">
+                Let's Talk
+              </button>
+            </div>
             <div className=" flex-wrap justify-center mx-auto w-[70%] flex">
               {skills.map((skill, index) => (
                 <span
