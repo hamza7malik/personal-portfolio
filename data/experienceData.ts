@@ -27,7 +27,7 @@ export const experienceData: ExperienceItem[] = [
   },
   {
     id: 2,
-    title: 'Full-Stack Engineer',
+    title: 'MERN Stack Developer',
     company: 'Hatch Techs / Jagahonline',
     location: 'Karachi, Pakistan',
     startDate: '2021-05',
