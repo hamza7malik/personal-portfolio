@@ -32,6 +32,7 @@ const ExperienceSection = () => {
     setCurrentPortfolio({icon, image, title, stack, text});
     setOpen(true);
   };
+
   const handleClose = () => setOpen(false);
 
   return (
@@ -103,7 +104,7 @@ const ExperienceSection = () => {
                               onClick={() =>
                                 handleOpen(
                                   portfolio.icon,
-                                  portfolio.image,
+                                  portfolio.frontImage || portfolio.image,
                                   portfolio.title,
                                   portfolio.stack,
                                   portfolio.text,

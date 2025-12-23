@@ -15,7 +15,7 @@ export const experienceData: ExperienceItem[] = [
   {
     id: 1,
     title: 'Freelance Full-Stack Engineer',
-    company: 'Remote (Upwork & Fiverr)',
+    company: 'Remote',
     location: null,
     startDate: '2018-01',
     endDate: '2021-01',
@@ -59,9 +59,9 @@ export const experienceData: ExperienceItem[] = [
     startDate: '2024-09',
     endDate: null,
     description:
-      'Led development of iOS/Android apps with AI features (RAG, OpenAI, Gemini). Implemented Apple/Google/Stripe subscriptions, CI/CD pipelines, and managed AWS infrastructure.',
+      'Led development of iOS/Android apps for SaaS startup, launched 2 products with AI features (RAG, OpenAI, Gemini). Implemented Apple/Google/Stripe subscriptions, CI/CD pipelines, and managed AWS infrastructure.',
     characterImage: '/images/experience/character4.webp',
     monsterImage: '/images/experience/monster4.webp',
-    portfolioItems: [],
+    portfolioItems: ['bltc', 'benu'],
   },
 ];
