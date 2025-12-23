@@ -1,0 +1,55 @@
+@keyframes floatBg {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(8px, -12px);
+  }
+  50% {
+    transform: translate(-6px, -8px);
+  }
+  75% {
+    transform: translate(10px, 4px);
+  }
+}
+
+@keyframes floatCharacter {
+  0%,
+  100% {
+    transform: translateX(-50%) translate(0, 0);
+  }
+  25% {
+    transform: translateX(-50%) translate(12px, -18px);
+  }
+  50% {
+    transform: translateX(-50%) translate(-10px, -12px);
+  }
+  75% {
+    transform: translateX(-50%) translate(15px, 6px);
+  }
+}
+
+.about-image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.floating-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+  animation: floatBg 7s ease-in-out infinite;
+}
+
+.floating-character {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: auto;
+  animation: floatCharacter 6s ease-in-out infinite;
+  animation-fill-mode: forwards;
+}

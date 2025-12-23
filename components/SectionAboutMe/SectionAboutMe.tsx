@@ -47,8 +47,17 @@ const SectionAboutMe = () => {
               </button>
             </div>
           </div>
-          <div className="">
-            <img src="/images/character/1.webp" alt="" />
+          <div className="about-image-container">
+            <img
+              src="/images/character/1-1.webp"
+              alt=""
+              className="floating-bg"
+            />
+            <img
+              src="/images/character/1-22.webp"
+              alt=""
+              className="floating-character"
+            />
           </div>
         </div>
       </div>
